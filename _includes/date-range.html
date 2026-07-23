@@ -1,0 +1,26 @@
+{%- comment -%}
+Formats a start/end date pair for display, e.g. "21 - 25 Sep 2026" or
+"29 Jun - 3 Jul 2026". A single-day event (end omitted or equal to
+start) prints just the one date, e.g. "21 Sep 2026". Falls back to two
+full dates when start and end are in different years. Parameters:
+  start - required, an ISO date
+  end   - optional; omit for single-day events
+{%- endcomment -%}
+{%- assign fmt = "%-d %b %Y" -%}
+{%- if include.end == nil or include.end == "" or include.start == include.end -%}
+{{ include.start | date: fmt }}
+{%- else -%}
+  {%- assign start_year = include.start | date: "%Y" -%}
+  {%- assign end_year = include.end | date: "%Y" -%}
+  {%- if start_year != end_year -%}
+{{ include.start | date: fmt }} &ndash; {{ include.end | date: fmt }}
+  {%- else -%}
+    {%- assign start_month = include.start | date: "%m" -%}
+    {%- assign end_month = include.end | date: "%m" -%}
+    {%- if start_month == end_month -%}
+{{ include.start | date: "%-d" }} &ndash; {{ include.end | date: fmt }}
+    {%- else -%}
+{{ include.start | date: "%-d %b" }} &ndash; {{ include.end | date: fmt }}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}

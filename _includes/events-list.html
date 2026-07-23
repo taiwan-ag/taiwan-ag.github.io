@@ -1,0 +1,41 @@
+{%- comment -%}
+Renders a <ul> of events bucketed by date, driven by site.data.events.
+Parameters:
+  events - required, a list of event hashes (title, institution, start,
+           end [optional], url [optional])
+  mode   - required, "upcoming" or "past". "upcoming" shows events whose
+           end (or start, if no end) is >= today, sorted soonest-first.
+           "past" shows the rest, sorted most-recent-first.
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign bucket = "" | split: "" -%}
+{%- for event in include.events -%}
+  {%- assign cutoff = event.end | default: event.start | date: "%Y-%m-%d" -%}
+  {%- assign one = include.events | slice: forloop.index0, 1 -%}
+  {%- if include.mode == "upcoming" -%}
+    {%- if cutoff >= today -%}
+      {%- assign bucket = bucket | concat: one -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- if cutoff < today -%}
+      {%- assign bucket = bucket | concat: one -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if include.mode == "upcoming" -%}
+  {%- assign bucket = bucket | sort: "start" -%}
+{%- else -%}
+  {%- assign bucket = bucket | sort: "start" | reverse -%}
+{%- endif -%}
+<ul>
+{% for event in bucket %}
+  <li>
+    {% include date-range.html start=event.start end=event.end %}:
+    {% if event.url %}<a href="{{ event.url }}" class="event-link">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %},
+    at {{ event.institution }}.
+  </li>
+{% endfor %}
+</ul>
+{%- if bucket.size == 0 -%}
+<p><em>{% if include.mode == "upcoming" %}No upcoming events.{% else %}No past events.{% endif %}</em></p>
+{%- endif -%}

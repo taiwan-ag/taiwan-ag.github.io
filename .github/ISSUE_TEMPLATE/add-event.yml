@@ -1,0 +1,47 @@
+name: Add event
+description: Suggest an algebraic geometry event in Taiwan for the website.
+title: "Add event: "
+labels: ["add-event"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Event title
+      placeholder: "NCTS Workshop on Birational Geometry"
+    validations:
+      required: true
+
+  - type: input
+    id: institution
+    attributes:
+      label: Organizing institution
+      placeholder: "National Center for Theoretical Sciences (NCTS)"
+    validations:
+      required: true
+
+  - type: input
+    id: start-date
+    attributes:
+      label: Start date
+      description: Format YYYY-MM-DD.
+      placeholder: "2026-10-05"
+    validations:
+      required: true
+
+  - type: input
+    id: end-date
+    attributes:
+      label: End date
+      description: Format YYYY-MM-DD. Leave blank if it's a single-day event.
+      placeholder: "2026-10-09"
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: Event homepage
+      description: Leave blank if the event has no dedicated webpage.
+      placeholder: "https://www.ncts.ntu.edu.tw/..."
+    validations:
+      required: false

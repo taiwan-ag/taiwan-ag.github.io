@@ -1,0 +1,11 @@
+# Algebraic geometry events in Taiwan (conferences, workshops, seminars).
+# Events are sorted into Upcoming/Past automatically by
+# _includes/events-list.html, based on end (or start, if no end) vs.
+# the current date. url is optional (omit if the event has no homepage).
+
+# EXAMPLE - replace with real entries
+- title: "Example Workshop on Birational Geometry"
+  institution: "National Taiwan University (NTU)"
+  start: 2026-10-05
+  end: 2026-10-09
+  url: "https://example.org/workshop"

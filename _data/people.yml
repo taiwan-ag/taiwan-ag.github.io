@@ -1,0 +1,19 @@
+# Algebraic geometers currently based in Taiwan, and active working
+# groups. Edit directly via PR (no issue-form for this file, unlike
+# events.yml).
+
+algebraic_geometers:
+  # EXAMPLE - replace with real entries
+  - name: "Jane Doe"
+    institution: "National Taiwan University"
+    position: "Professor"
+    research_interests: "birational geometry, moduli spaces"
+    url: "https://example.org/~janedoe"
+    email: "jane.doe@example.org"
+
+working_groups:
+  # EXAMPLE - replace with real entries
+  - name: "Example Algebraic Geometry Seminar"
+    institution: "National Taiwan University"
+    description: "Weekly seminar on current topics in algebraic geometry."
+    url: "https://example.org/ag-seminar"
