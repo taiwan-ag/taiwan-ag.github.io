@@ -1,0 +1,49 @@
+name: Add job opportunity
+description: Suggest a job, postdoc, or PhD opening related to algebraic geometry in Taiwan for the website.
+title: "Add job opportunity: "
+labels: ["add-job-opportunity"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Position title
+      placeholder: "Postdoctoral Fellow in Algebraic Geometry"
+    validations:
+      required: true
+
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+      placeholder: "National Taiwan University"
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Application deadline
+      description: >-
+        Format YYYY-MM-DD. Leave blank if this is a recurring opportunity
+        that accepts applications on a rolling basis rather than a
+        one-time posting with a deadline.
+      placeholder: "2026-12-01"
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: Posting URL
+      description: Leave blank if there's no dedicated posting page.
+      placeholder: "https://example.org/jobs/postdoc"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Two-year position, algebraic geometry or related areas."
+    validations:
+      required: false

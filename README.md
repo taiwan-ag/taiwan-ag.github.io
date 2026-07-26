@@ -17,18 +17,21 @@ edit files.
 
 ## Content data files
 
-Everything editable lives under `_data/*.yml`. Two content types
-(events and people) also accept public suggestions via a GitHub issue
-template; a maintainer then manually transcribes an accepted suggestion
-into the data file and closes the issue — there's no automation linking
-the two, so the data file is always the source of truth.
+Everything editable lives under `_data/*.yml`. All four content types
+(events, people, working groups, jobs) accept public suggestions via a
+GitHub issue template, reachable from buttons on the
+[Get in Touch](https://taiwan-ag.github.io/get-in-touch/) page
+(`get-in-touch.md`); a maintainer then manually transcribes an accepted
+suggestion into the data file and closes the issue — there's no
+automation linking the two, so the data file is always the source of
+truth.
 
 ## Events
 
 ### Suggesting an event
 
-Visitors use the **Add Event** button on the homepage (Upcoming Events),
-which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
+Visitors use the **Add Event** button on the homepage (Upcoming Events)
+or the Get in Touch page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
 (defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
 title, organizing institution, start/end dates, and an optional homepage
 URL. Submitting it opens an issue labeled `add-event`.
@@ -57,14 +60,14 @@ suggestion issue, do that once the entry is merged.
 
 ### Suggesting a person
 
-Unlike events, there's no "Add Person" button on the site — the People
-page is aimed at visitors browsing the community, not at prompting
-entries. If someone asks to be listed, point them at the [Add Person](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
-issue template (`.github/ISSUE_TEMPLATE/add-person.yml`) directly. It
-asks for name, surname, position, institution, an optional
-homepage/email, and research interests: checkboxes drawn from the
-current tag taxonomy, plus a free-text "Other" field for anything not
-yet covered.
+Visitors use the **Add Researcher** button on the Get in Touch page,
+which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
+(`.github/ISSUE_TEMPLATE/add-person.yml`) asking for name, surname,
+position, institution, an optional homepage/email, and research
+interests: checkboxes drawn from the current tag taxonomy, plus a
+free-text "Other" field for anything not yet covered. Unlike events,
+there's no such button on the People page itself, to keep it focused on
+browsing the community rather than prompting entries.
 
 ### Adding a person
 
@@ -121,8 +124,17 @@ the build, but it's best kept in sync.
 
 ## Working Groups
 
-No issue template — open a pull request editing
-`_data/working_groups.yml` directly:
+### Suggesting a working group
+
+Visitors use the **Add Working Group** button on the Get in Touch page,
+which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-working-group.yml)
+(`.github/ISSUE_TEMPLATE/add-working-group.yml`) asking for the group's
+name, institution, description, and an optional homepage.
+
+### Adding a working group
+
+Whether you're transcribing a suggestion issue or adding one directly,
+edit `_data/working_groups.yml` and append an entry:
 
 ```yaml
 - name: "Example Algebraic Geometry Seminar"
@@ -137,8 +149,19 @@ tracked in the data.
 
 ## Job Opportunities
 
-No issue template — open a pull request editing `_data/jobs.yml`, which
-has two lists:
+### Suggesting a job opportunity
+
+Visitors use the **Add Job Opportunity** button on the Get in Touch
+page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-job-opportunity.yml)
+(`.github/ISSUE_TEMPLATE/add-job-opportunity.yml`) asking for the
+position title, institution, an optional application deadline (left
+blank for a recurring/rolling opportunity), an optional posting URL, and
+an optional description.
+
+### Adding a job opportunity
+
+Whether you're transcribing a suggestion issue or adding one directly,
+edit `_data/jobs.yml`, which has two lists:
 
 ```yaml
 open_positions:
@@ -155,9 +178,11 @@ recurring_opportunities:
     description: "Accepts applications on a rolling basis; check their site for current calls."
 ```
 
-`deadline` is `YYYY-MM-DD`. `open_positions` entries automatically stop
-appearing on the Job Opportunities page once their `deadline` passes —
-you can delete the entry from the file at that point too, but it's not
-required. `recurring_opportunities` (institutions that accept
-applications outside a specific posting cycle) are always shown and have
-no `deadline` field.
+Add a suggestion with a `deadline` to `open_positions`, and one without
+a `deadline` (an ongoing/recurring opportunity) to
+`recurring_opportunities` — note the second list uses `name` rather than
+`title`. `deadline` is `YYYY-MM-DD`. `open_positions` entries
+automatically stop appearing on the Job Opportunities page once their
+`deadline` passes — you can delete the entry from the file at that point
+too, but it's not required. `recurring_opportunities` are always shown
+and have no `deadline` field.

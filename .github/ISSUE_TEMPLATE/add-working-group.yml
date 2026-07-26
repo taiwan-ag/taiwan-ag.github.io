@@ -1,0 +1,37 @@
+name: Add working group
+description: Suggest an algebraic geometry working group or seminar in Taiwan for the website.
+title: "Add working group: "
+labels: ["add-working-group"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Working group name
+      placeholder: "NTU Algebraic Geometry Seminar"
+    validations:
+      required: true
+
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+      placeholder: "National Taiwan University"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Weekly seminar on current topics in algebraic geometry."
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Homepage
+      description: Leave blank if there's no dedicated homepage.
+      placeholder: "https://example.org/ag-seminar"
+    validations:
+      required: false
