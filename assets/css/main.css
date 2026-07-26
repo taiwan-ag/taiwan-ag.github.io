@@ -34,7 +34,7 @@ html {
   --bg-color: #f1f1f1;
   --sidebar-bg-color: #e5e5e6;
   --text-color: #000;
-  --accent-color: #7b1e3a;
+  --accent-color: #0969da;
   /* Shading for nav links, layered on top of --sidebar-bg-color: a dark
      overlay in light mode, a light one in dark mode (see the two dark
      blocks below), since "shading" darkens on a light background but
