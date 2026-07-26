@@ -23,9 +23,19 @@ issue is submitted, a maintainer adds the corresponding entry to
 `_data/events.yml` by hand and closes the issue — there's no automation
 behind this step.
 
-## Adding or editing people, working groups, and jobs
+## Adding a person
+
+Use the [Add Person](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
+issue template rather than editing `_data/people.yml` directly. Once an
+issue is submitted, a maintainer adds the corresponding entry to
+`_data/people.yml` by hand and closes the issue — there's no automation
+behind this step. If the submitter listed "Other" research interests not
+covered by the checkbox list, add a new tag to `_data/research_areas.yml`
+first (if warranted) and reference it from the new entry, rather than
+storing free text on the person.
+
+## Adding or editing working groups and jobs
 
 These aren't backed by an issue template — open a pull request editing
-`_data/people.yml` (algebraic geometers and working groups) or
-`_data/jobs.yml` (open positions and institutions that regularly accept
-applications) directly.
+`_data/people.yml` (working groups) or `_data/jobs.yml` (open positions
+and institutions that regularly accept applications) directly.

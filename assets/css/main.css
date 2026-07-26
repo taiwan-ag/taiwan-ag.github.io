@@ -321,6 +321,160 @@ h2 {
   display: none;
 }
 
+/* People page: filter bar above the card list (assets/js/people-filter.js
+   drives show/hide; markup lives in people.md). */
+.people-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--nav-hover-bg);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filter-group-label {
+  font-size: 0.85em;
+  font-weight: bold;
+  opacity: 0.75;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: 28rem;
+}
+
+.filter-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9em;
+}
+
+.filter-checkbox input {
+  margin: 0;
+}
+
+.people-search {
+  font: inherit;
+  font-size: 0.9em;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 0.25rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  opacity: 0.85;
+}
+
+.people-search:focus {
+  outline: none;
+  opacity: 1;
+  border-color: var(--accent-color);
+}
+
+/* Overrides .button's block/auto-margin centering, which fights the
+   flex layout here -- the clear button should sit inline with the
+   other filter groups, not centered on its own line. */
+#people-filters-clear {
+  display: inline-block;
+  margin: 0;
+}
+
+.people-empty-message {
+  opacity: 0.75;
+}
+
+.people-group {
+  margin-top: 1.5rem;
+}
+
+.people-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.person-card {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--nav-hover-bg);
+  border-radius: 0.4rem;
+}
+
+.person-line1 {
+  margin: 0;
+}
+
+.person-name {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+a.person-name:visited {
+  color: var(--accent-color);
+}
+
+a.person-name:hover {
+  text-decoration: underline;
+}
+
+.person-sep {
+  margin: 0 0.3rem;
+  opacity: 0.6;
+}
+
+.person-email-icon {
+  margin-left: 0.4rem;
+  font-size: 0.85em;
+}
+
+.person-affiliation {
+  margin: 0.2rem 0 0;
+}
+
+.person-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0 0;
+}
+
+/* Tag chips appear both as filter-bar toggles and inline on each card
+   (assets/js/people-filter.js wires up both the same way, so clicking
+   either one filters the list). */
+.tag-chip {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 999px;
+  background: none;
+  color: var(--text-color);
+  font: inherit;
+  font-size: 0.8em;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.tag-chip:hover {
+  opacity: 1;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.tag-chip.active {
+  opacity: 1;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
 @media (max-width: 768px) {
   /* Smaller than desktop's 18px -- reads better at typical phone
      viewing distance/density than the size chosen for desktop. */
@@ -395,6 +549,15 @@ h2 {
 
   .site-nav.open {
     transform: translateX(0);
+  }
+
+  .people-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-options {
+    max-width: none;
   }
 
   .nav-backdrop:not([hidden]) {

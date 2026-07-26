@@ -1,0 +1,99 @@
+name: Add person
+description: Suggest an algebraic geometer based in Taiwan for the website.
+title: "Add person: "
+labels: ["add-person"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Full name
+      placeholder: "Jane Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: surname
+    attributes:
+      label: Surname
+      description: Used to alphabetize the People page. E.g. for "Wen-Fong Ke" this would be "Ke".
+      placeholder: "Doe"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: position
+    attributes:
+      label: Position
+      options:
+        - Professor
+        - Postdoc
+        - PhD Student
+    validations:
+      required: true
+
+  - type: input
+    id: institution
+    attributes:
+      label: Institution
+      placeholder: "National Taiwan University"
+    validations:
+      required: true
+
+  - type: input
+    id: working-group
+    attributes:
+      label: Working group
+      description: Leave blank if not part of one.
+      placeholder: "Example Algebraic Geometry Seminar"
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: Homepage
+      description: Leave blank if there's no dedicated homepage.
+      placeholder: "https://example.org/~janedoe"
+    validations:
+      required: false
+
+  - type: input
+    id: email
+    attributes:
+      label: Email
+      description: Leave blank to omit contact info from the listing.
+      placeholder: "jane.doe@example.org"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: research-interests
+    attributes:
+      label: Research interests
+      description: Select all that apply. See the taxonomy in `_data/research_areas.yml`.
+      options:
+        - label: "Birational Geometry"
+        - label: "Moduli Spaces"
+        - label: "Derived Categories"
+        - label: "Arithmetic Geometry"
+        - label: "Complex Geometry"
+        - label: "Singularity Theory"
+        - label: "Mirror Symmetry"
+        - label: "Tropical Geometry"
+        - label: "Hodge Theory"
+        - label: "Commutative Algebra"
+        - label: "Enumerative Geometry"
+        - label: "Toric Geometry"
+    validations:
+      required: false
+
+  - type: input
+    id: other-interests
+    attributes:
+      label: Other research interests
+      description: >-
+        Anything not covered above, as free text. A maintainer will add a
+        new tag to _data/research_areas.yml if warranted.
+      placeholder: "Noncommutative geometry"
+    validations:
+      required: false

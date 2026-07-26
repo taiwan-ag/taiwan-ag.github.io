@@ -1,0 +1,50 @@
+# Curated taxonomy of research-interest tags used on the People page
+# (see people.md). Every person's `research_interests` in people.yml
+# must reference an `id` from this list, so the filter UI stays a fixed
+# set of options rather than free text. Edit/extend as needed -- e.g.
+# when the "Other" field on the "Add person" issue template surfaces an
+# interest not covered here, add a new entry rather than inventing a
+# one-off tag on a person.
+#
+# - id:    stable slug, referenced from people.yml and the issue
+#          template; don't change it once in use, or existing
+#          references break.
+# - label: full name, used in the issue template's checkbox list.
+# - abbr:  short form shown on tag chips on the People page.
+
+- id: birational-geometry
+  label: "Birational Geometry"
+  abbr: "Bir. Geom."
+- id: moduli-spaces
+  label: "Moduli Spaces"
+  abbr: "Moduli"
+- id: derived-categories
+  label: "Derived Categories"
+  abbr: "Der. Cat."
+- id: arithmetic-geometry
+  label: "Arithmetic Geometry"
+  abbr: "Arith. Geom."
+- id: complex-geometry
+  label: "Complex Geometry"
+  abbr: "Complex Geom."
+- id: singularity-theory
+  label: "Singularity Theory"
+  abbr: "Singularities"
+- id: mirror-symmetry
+  label: "Mirror Symmetry"
+  abbr: "Mirror Sym."
+- id: tropical-geometry
+  label: "Tropical Geometry"
+  abbr: "Tropical"
+- id: hodge-theory
+  label: "Hodge Theory"
+  abbr: "Hodge Thy."
+- id: commutative-algebra
+  label: "Commutative Algebra"
+  abbr: "Comm. Alg."
+- id: enumerative-geometry
+  label: "Enumerative Geometry"
+  abbr: "Enumerative"
+- id: toric-geometry
+  label: "Toric Geometry"
+  abbr: "Toric"
