@@ -9,10 +9,12 @@ permalink: /get-in-touch/
 If you would like to suggest adding an event, researcher, working group,
 or job opportunity, please use the buttons below:
 
+<div class="button-row" markdown="1">
 [Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml){: .button }
 [Add Researcher](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml){: .button }
 [Add Working Group](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-working-group.yml){: .button }
 [Add Job Opportunity](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-job-opportunity.yml){: .button }
+</div>
 
 ## Get in Touch
 

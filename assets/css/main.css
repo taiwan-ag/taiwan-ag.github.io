@@ -241,9 +241,9 @@ h2 {
   display: block;
   width: fit-content;
   margin: 0 auto;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.7rem;
   border: 1px solid var(--text-color);
-  border-radius: 0.25rem;
+  border-radius: 999px;
   font-size: 0.9em;
   background: none;
   color: var(--text-color);
@@ -259,6 +259,23 @@ h2 {
   border-color: var(--accent-color);
   color: var(--accent-color);
   opacity: 1;
+}
+
+/* Groups several .button links on one row with space between them,
+   wrapping to additional rows only once they no longer fit (e.g. the
+   suggestion buttons on get-in-touch.md). Kramdown wraps consecutive
+   link lines in a single shared <p> rather than one per link, so the
+   flex layout targets that <p> -- the actual parent of the <a> tags --
+   rather than .button-row itself. */
+.button-row p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.button-row .button {
+  margin: 0;
 }
 
 .theme-toggle {
