@@ -110,6 +110,16 @@
       });
     }
 
+    var searchToggle = document.getElementById("people-search-toggle");
+    if (searchToggle) {
+      searchToggle.addEventListener("click", function () {
+        filters.hidden = !filters.hidden;
+        searchToggle.classList.toggle("active", !filters.hidden);
+        searchToggle.setAttribute("aria-expanded", filters.hidden ? "false" : "true");
+        if (!filters.hidden && searchInput) searchInput.focus();
+      });
+    }
+
     applyFilters();
   });
 })();

@@ -321,8 +321,48 @@ h2 {
   display: none;
 }
 
+/* People page heading: the page's h1 plus an inline toggle button for
+   the filter bar below (assets/js/people-filter.js), grouped and
+   centered together as one unit rather than each centered separately. */
+.people-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.67em 0;
+}
+
+.people-heading h1 {
+  margin: 0;
+}
+
+/* Generic small icon button, sized/colored like .theme-toggle but
+   positioned inline rather than fixed. */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.icon-button:hover,
+.icon-button.active {
+  color: var(--accent-color);
+}
+
 /* People page: filter bar above the card list (assets/js/people-filter.js
-   drives show/hide; markup lives in people.md). */
+   drives show/hide; markup lives in people.md). Explicit [hidden]
+   override needed since the plain .people-filters rule below sets its
+   own `display`, which an author stylesheet rule otherwise wins over
+   the browser's default `[hidden] { display: none }`. */
+.people-filters[hidden] {
+  display: none;
+}
+
 .people-filters {
   display: flex;
   flex-wrap: wrap;

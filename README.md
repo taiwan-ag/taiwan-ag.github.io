@@ -37,5 +37,5 @@ storing free text on the person.
 ## Adding or editing working groups and jobs
 
 These aren't backed by an issue template — open a pull request editing
-`_data/people.yml` (working groups) or `_data/jobs.yml` (open positions
-and institutions that regularly accept applications) directly.
+`_data/working_groups.yml` or `_data/jobs.yml` (open positions and
+institutions that regularly accept applications) directly.

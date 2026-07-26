@@ -1,9 +1,11 @@
-# Algebraic geometers currently based in Taiwan, and active working
-# groups. People can be suggested via the "Add person" issue template
+# Algebraic geometers currently based in Taiwan. People can be
+# suggested via the "Add person" issue template
 # (.github/ISSUE_TEMPLATE/add-person.yml); a maintainer then adds the
 # entry here by hand and closes the issue -- there's no automation
-# behind this step, same as events.yml. Working groups have no issue
-# template and are still edited directly via PR.
+# behind this step, same as events.yml.
+#
+# Not associated with _data/working_groups.yml -- a person's
+# affiliation with a working group, if any, isn't tracked here.
 #
 # Fields on each algebraic_geometers entry:
 # - name:                display name.
@@ -14,8 +16,6 @@
 # - institution:          affiliation shown on the People page.
 # - research_interests:   list of tag `id`s from research_areas.yml.
 #                          Add a new tag there first if none fit.
-# - working_group:        optional; free text, not shown on the People
-#                          page itself.
 # - url:                  optional homepage; makes the name clickable.
 # - email:                optional.
 
@@ -28,10 +28,3 @@ algebraic_geometers:
     research_interests: ["birational-geometry", "moduli-spaces"]
     url: "https://example.org/~janedoe"
     email: "jane.doe@example.org"
-
-working_groups:
-  # EXAMPLE - replace with real entries
-  - name: "Example Algebraic Geometry Seminar"
-    institution: "National Taiwan University"
-    description: "Weekly seminar on current topics in algebraic geometry."
-    url: "https://example.org/ag-seminar"

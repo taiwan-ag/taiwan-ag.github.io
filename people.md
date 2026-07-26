@@ -7,11 +7,17 @@ permalink: /people/
 {% assign positions = "Professor,Postdoc,PhD Student" | split: "," %}
 {% assign institutions = site.data.people.algebraic_geometers | map: "institution" | uniq | sort %}
 
-# People
+<div class="people-heading">
+  <h1>Algebraic Geometers in Taiwan</h1>
+  <button type="button" id="people-search-toggle" class="icon-button" aria-label="Toggle search and filters" aria-expanded="false" aria-controls="people-filters">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </button>
+</div>
 
-## Algebraic Geometers in Taiwan
-
-<div class="people-filters" id="people-filters">
+<div class="people-filters" id="people-filters" hidden>
   <div class="filter-group">
     <label for="people-search" class="filter-group-label">Search</label>
     <input type="text" id="people-search" class="people-search" placeholder="Search by name…" autocomplete="off">
@@ -86,14 +92,3 @@ permalink: /people/
   </section>
   {% endif %}
 {% endfor %}
-
-## Working Groups
-
-<ul>
-{% for group in site.data.people.working_groups %}
-  <li>
-    {% if group.url %}<a href="{{ group.url }}" class="external-link">{{ group.name }}</a>{% else %}{{ group.name }}{% endif %}
-    &mdash; {{ group.institution }}. {{ group.description }}
-  </li>
-{% endfor %}
-</ul>
