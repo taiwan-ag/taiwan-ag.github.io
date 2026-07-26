@@ -18,7 +18,7 @@ or job opportunity, please use the buttons below:
 
 ## Get in Touch
 
-If you have any questions, suggestions, or comments, please use the
+If you have any other suggestions, requests, or comments, please use the
 button below to get in touch:
 
 [Get in Touch](mailto:contact@taiwan-ag.example){: .button }
