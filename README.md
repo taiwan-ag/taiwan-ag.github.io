@@ -15,27 +15,149 @@ Requires Ruby and Bundler.
 Then open <http://127.0.0.1:4000>. The site rebuilds automatically as you
 edit files.
 
-## Adding an event
+## Content data files
 
-Use the [Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
-issue template rather than editing `_data/events.yml` directly. Once an
-issue is submitted, a maintainer adds the corresponding entry to
-`_data/events.yml` by hand and closes the issue — there's no automation
-behind this step.
+Everything editable lives under `_data/*.yml`. Two content types
+(events and people) also accept public suggestions via a GitHub issue
+template; a maintainer then manually transcribes an accepted suggestion
+into the data file and closes the issue — there's no automation linking
+the two, so the data file is always the source of truth.
 
-## Adding a person
+## Events
 
-Use the [Add Person](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
-issue template rather than editing `_data/people.yml` directly. Once an
-issue is submitted, a maintainer adds the corresponding entry to
-`_data/people.yml` by hand and closes the issue — there's no automation
-behind this step. If the submitter listed "Other" research interests not
-covered by the checkbox list, add a new tag to `_data/research_areas.yml`
-first (if warranted) and reference it from the new entry, rather than
-storing free text on the person.
+### Suggesting an event
 
-## Adding or editing working groups and jobs
+Visitors use the **Add Event** button on the homepage (Upcoming Events),
+which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
+(defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
+title, organizing institution, start/end dates, and an optional homepage
+URL. Submitting it opens an issue labeled `add-event`.
 
-These aren't backed by an issue template — open a pull request editing
-`_data/working_groups.yml` or `_data/jobs.yml` (open positions and
-institutions that regularly accept applications) directly.
+### Adding an event
+
+Whether you're transcribing a suggestion issue or adding one directly,
+edit `_data/events.yml` and append an entry:
+
+```yaml
+- title: "NCTS Workshop on Birational Geometry"
+  institution: "National Center for Theoretical Sciences (NCTS)"
+  start: 2026-10-05
+  end: 2026-10-09     # omit entirely for a single-day event
+  url: "https://www.ncts.ntu.edu.tw/..."   # omit if there's no event homepage
+```
+
+Dates are `YYYY-MM-DD`. You don't need to place the entry in any
+particular order in the file — `_includes/events-list.html` (used by
+both the homepage and `/past-events/`) automatically sorts events into
+Upcoming vs. Past and orders them by date, based on `end` (or `start`,
+if there's no `end`) versus the current date. If you're closing out a
+suggestion issue, do that once the entry is merged.
+
+## People
+
+### Suggesting a person
+
+Unlike events, there's no "Add Person" button on the site — the People
+page is aimed at visitors browsing the community, not at prompting
+entries. If someone asks to be listed, point them at the [Add Person](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
+issue template (`.github/ISSUE_TEMPLATE/add-person.yml`) directly. It
+asks for name, surname, position, institution, an optional
+homepage/email, and research interests: checkboxes drawn from the
+current tag taxonomy, plus a free-text "Other" field for anything not
+yet covered.
+
+### Adding a person
+
+Edit `_data/people.yml` and append an entry under `algebraic_geometers`:
+
+```yaml
+- name: "Jane Doe"
+  surname: "Doe"                 # see below -- not displayed
+  position: "Professor"          # "Professor", "Postdoc", or "PhD Student"
+  institution: "National Taiwan University"
+  research_interests: ["birational-geometry", "moduli-spaces"]
+  url: "https://example.org/~janedoe"    # optional
+  email: "jane.doe@example.org"          # optional
+```
+
+`surname` is used only to alphabetize people within their position block
+on the People page (Professors, then Postdocs, then PhD Students) — it's
+never shown. For "Wen-Fong Ke", `surname` would be `"Ke"`.
+
+`research_interests` is a list of tag `id`s, not free text — see the next
+section.
+
+### Research interest tags
+
+The People page's research-interest filter only works because every
+person draws from the same fixed set of tags: `research_interests`
+entries must reference an `id` from `_data/research_areas.yml`, not
+arbitrary text. Each tag there looks like:
+
+```yaml
+- id: birational-geometry      # stable slug, referenced from people.yml
+                                # and the issue template -- don't rename
+                                # an id once it's in use, or existing
+                                # references to it stop resolving
+  label: "Birational Geometry" # full name, shown as a checkbox option
+                                # in the "Add person" issue template
+  abbr: "Bir. Geom."            # short form, shown on People page chips
+```
+
+**To add a tag**: append a new entry to `_data/research_areas.yml` with
+a unique `id`, then also add its `label` as a new checkbox option under
+`research-interests` in `.github/ISSUE_TEMPLATE/add-person.yml`, so
+future suggestions can select it.
+
+**When a suggestion lists "Other" interests**: decide whether the
+free-text answer matches an existing tag (use that tag's `id` on the new
+person) or genuinely needs a new one (add it as above, then reference
+the new `id`).
+
+**Removing a tag**: also remove it from every person's
+`research_interests` — `people.md` guards the lookup, so a dangling `id`
+just silently drops out of that person's chip list rather than breaking
+the build, but it's best kept in sync.
+
+## Working Groups
+
+No issue template — open a pull request editing
+`_data/working_groups.yml` directly:
+
+```yaml
+- name: "Example Algebraic Geometry Seminar"
+  institution: "National Taiwan University"
+  description: "Weekly seminar on current topics in algebraic geometry."
+  url: "https://example.org/ag-seminar"   # optional
+```
+
+Shown on the `/working-groups/` page. Working groups aren't linked to
+`_data/people.yml` entries — a person's membership in one, if any, isn't
+tracked in the data.
+
+## Job Opportunities
+
+No issue template — open a pull request editing `_data/jobs.yml`, which
+has two lists:
+
+```yaml
+open_positions:
+  - title: "Postdoctoral Fellow in Algebraic Geometry"
+    institution: "National Taiwan University"
+    deadline: 2026-12-01
+    url: "https://example.org/jobs/postdoc"   # optional
+    description: "Two-year position, algebraic geometry or related areas."
+
+recurring_opportunities:
+  - name: "NCTS Postdoctoral Fellowships"
+    institution: "National Center for Theoretical Sciences (NCTS), Taiwan"
+    url: "https://example.org/ncts-fellowships"   # optional
+    description: "Accepts applications on a rolling basis; check their site for current calls."
+```
+
+`deadline` is `YYYY-MM-DD`. `open_positions` entries automatically stop
+appearing on the Job Opportunities page once their `deadline` passes —
+you can delete the entry from the file at that point too, but it's not
+required. `recurring_opportunities` (institutions that accept
+applications outside a specific posting cycle) are always shown and have
+no `deadline` field.
