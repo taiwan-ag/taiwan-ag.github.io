@@ -4,6 +4,8 @@ title: Contact
 permalink: /contact/
 ---
 
+# Contact
+
 ## Suggest an Addition to the Website
 
 If you would like to suggest adding an event or researcher, please use
