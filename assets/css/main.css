@@ -54,7 +54,36 @@ h1 {
 }
 
 h2 {
-  margin-top: 2.5rem;
+  font-size: 1.15em;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+.page-content > h2:first-of-type {
+  margin-top: 1rem;
+}
+
+/* Title + action button (Add Event / Search) on one row, button
+   right-aligned rather than centered on its own line below the
+   heading. */
+.page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  text-align: left;
+}
+
+.page-header .button {
+  flex-shrink: 0;
+  margin: 0;
 }
 
 /* Desktop: the nav is a persistent left sidebar, so page content is
@@ -456,6 +485,10 @@ h2 {
   margin-top: 1.5rem;
 }
 
+.people-group:first-of-type {
+  margin-top: 0.75rem;
+}
+
 .people-cards {
   display: flex;
   flex-direction: column;
@@ -559,6 +592,14 @@ a.person-name:hover {
      h1 would just duplicate it. */
   h1 {
     display: none;
+  }
+
+  /* With the h1 hidden, .page-header's only visible content is the
+     action button -- keep it pinned to the right instead of it
+     collapsing to flex-start (space-between's behavior with a single
+     child). */
+  .page-header {
+    justify-content: flex-end;
   }
 
   .topbar {
