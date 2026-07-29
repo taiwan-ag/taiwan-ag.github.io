@@ -5,7 +5,6 @@
     <span class="nav-toggle-bar"></span>
   </button>
   <a href="{{ '/' | relative_url }}" class="site-name">{{ site.short_title }}</a>
-  <span class="page-title">{{ page.title }}</span>
   <nav id="site-nav" class="site-nav" aria-label="Main navigation">
     <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Activities</a>
     <a href="{{ '/people/' | relative_url }}"{% if page.url == '/people/' %} class="active"{% endif %}>People</a>

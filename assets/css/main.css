@@ -50,6 +50,7 @@ body {
 }
 
 h1 {
+  font-size: 3.75rem;
   text-align: center;
 }
 
@@ -110,38 +111,33 @@ h3 {
 
 /* Plain header row, no background/border -- sits in normal document
    flow (scrolls with the page) on every breakpoint, unlike the old
-   fixed sidebar/topbar. Width-matched to .page-content so the name and
-   links line up above the content column instead of spanning edge to
-   edge. */
+   fixed sidebar/topbar. Spans the full page width (unlike
+   .page-content's narrower reading column), name flush left and links
+   flush right. */
 .site-header {
   align-items: center;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 45rem;
-  padding: 1.5rem 3rem 0;
+  padding: 1.25rem 3rem 0;
 }
 
 .site-name {
   color: inherit;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: bold;
+  opacity: 0.8;
   text-decoration: none;
 }
 
-/* Mobile-only (hamburger for the off-canvas drawer, and the current
-   page's short title) -- hidden on desktop, where the nav links render
-   inline in .site-nav instead. Shown by the @media block below. */
-.nav-toggle,
-.page-title {
-  display: none;
-}
-
+/* Mobile-only hamburger for the off-canvas drawer -- hidden on
+   desktop, where the nav links render inline in .site-nav instead.
+   Shown by the @media block below. */
 .nav-toggle {
   background: none;
   border: none;
   cursor: pointer;
+  display: none;
   flex-direction: column;
   gap: 0.3rem;
   padding: 0.4rem;
@@ -159,21 +155,24 @@ h3 {
    query below replaces this with the off-canvas drawer instead. */
 .site-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .site-nav a {
   color: inherit;
-  padding-bottom: 0.2rem;
+  font-size: 1rem;
+  opacity: 0.64;
   text-decoration: none;
 }
 
 .site-nav a:hover {
   color: var(--accent-color);
+  opacity: 1;
 }
 
 .site-nav a.active {
-  border-bottom: 2px solid var(--accent-color);
+  font-weight: bold;
+  opacity: 0.85;
 }
 
 .mailto-link,
@@ -474,10 +473,8 @@ a.person-name:hover {
     padding: 1rem 1.25rem 3.5rem;
   }
 
-  /* .site-header already shows the page's short title on mobile, so
-     the in-page h1 would just duplicate it. */
   h1 {
-    display: none;
+    font-size: 2.25rem;
   }
 
   .site-header {
@@ -488,17 +485,6 @@ a.person-name:hover {
 
   .nav-toggle {
     display: flex;
-  }
-
-  /* Truncates rather than wrapping when a page's title is too long for
-     narrow screens. */
-  .page-title {
-    display: block;
-    font-weight: bold;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   /* Off-canvas drawer instead of desktop's plain inline links. */
@@ -525,17 +511,18 @@ a.person-name:hover {
 
   .site-nav a {
     border-radius: 0.3rem;
+    opacity: 1;
     padding: 0.4rem 0.6rem;
   }
 
   .site-nav a:hover {
     background: var(--nav-hover-bg);
     color: inherit;
+    opacity: 1;
   }
 
   .site-nav a.active {
     background: var(--nav-active-bg);
-    border-bottom: none;
   }
 
   .people-filters {
