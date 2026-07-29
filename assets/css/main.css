@@ -263,7 +263,7 @@ h2 {
 
 /* Groups several .button links on one row with space between them,
    wrapping to additional rows only once they no longer fit (e.g. the
-   suggestion buttons on get-in-touch.md). Kramdown wraps consecutive
+   suggestion buttons on contact.md). Kramdown wraps consecutive
    link lines in a single shared <p> rather than one per link, so the
    flex layout targets that <p> -- the actual parent of the <a> tags --
    rather than .button-row itself. */

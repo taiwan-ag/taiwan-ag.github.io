@@ -20,8 +20,8 @@ edit files.
 Everything editable lives under `_data/*.yml`. Both content types
 (events, people) accept public suggestions via a GitHub issue template,
 reachable from buttons on the
-[Get in Touch](https://taiwan-ag.github.io/get-in-touch/) page
-(`get-in-touch.md`); a maintainer then manually transcribes an accepted
+[Contact](https://taiwan-ag.github.io/contact/) page
+(`contact.md`); a maintainer then manually transcribes an accepted
 suggestion into the data file and closes the issue — there's no
 automation linking the two, so the data file is always the source of
 truth.
@@ -31,7 +31,7 @@ truth.
 ### Suggesting an event
 
 Visitors use the **Add Event** button on the homepage (Activities)
-or the Get in Touch page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
+or the Contact page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
 (defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
 title, organizing institution, start/end dates, and an optional homepage
 URL. Submitting it opens an issue labeled `add-event`.
@@ -60,7 +60,7 @@ closing out a suggestion issue, do that once the entry is merged.
 
 ### Suggesting a person
 
-Visitors use the **Add Researcher** button on the Get in Touch page,
+Visitors use the **Add Researcher** button on the Contact page,
 which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
 (`.github/ISSUE_TEMPLATE/add-person.yml`) asking for name, surname,
 position, institution, an optional homepage/email, and research

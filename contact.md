@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Get in Touch
-permalink: /get-in-touch/
+title: Contact
+permalink: /contact/
 ---
 
 ## Suggest an Addition to the Website
