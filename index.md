@@ -5,10 +5,9 @@ heading: Algebraic Geometry in Taiwan
 permalink: /
 ---
 
-<div class="page-header">
-  <h1>{{ page.heading }}</h1>
-  <a href="https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml" class="button">Add Event</a>
-</div>
+# {{ page.heading }}
+
+[Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml){: .button }
 
 ## Upcoming Events
 

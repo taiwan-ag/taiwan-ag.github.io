@@ -1,32 +1,16 @@
-<header>
-  <div class="topbar">
-    <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
-    <span class="topbar-title">{{ page.heading }}</span>
-  </div>
-  <div class="info-toggle-wrap">
-    <button type="button" id="info-toggle" class="info-toggle" aria-expanded="false" aria-controls="info-popup" title="About this website" aria-label="About this website">&#9432;</button>
-    <div id="info-popup" class="info-popup" hidden>
-      <p>A directory of algebraic geometry events (conferences,
-      workshops, seminars) and researchers in Taiwan.</p>
-      <p>You can suggest additions through the Contact page.</p>
-      <p class="info-popup-credit">&mdash; Created by
-      <a href="https://pedro-nunez.github.io/">Pedro Núñez</a> &mdash;<br>
-      &mdash; Maintained by
-      <a href="https://math.ncku.edu.tw/p/404-1221-271791.php?Lang=zh-tw">Ching-Jui Lai</a> &mdash;</p>
-    </div>
-  </div>
+<header class="site-header">
+  <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <a href="{{ '/' | relative_url }}" class="site-name">{{ site.short_title }}</a>
+  <span class="page-title">{{ page.title }}</span>
+  <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Activities</a>
+    <a href="{{ '/people/' | relative_url }}"{% if page.url == '/people/' %} class="active"{% endif %}>People</a>
+    <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} class="active"{% endif %}>Contact</a>
+  </nav>
 </header>
-
-<nav id="site-nav" class="site-nav" aria-label="Main navigation">
-  <div class="site-name sidebar-name">{{ site.short_title }}</div>
-  <hr class="sidebar-divider">
-  <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Activities</a>
-  <a href="{{ '/people/' | relative_url }}"{% if page.url == '/people/' %} class="active"{% endif %}>People</a>
-  <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} class="active"{% endif %}>Contact</a>
-</nav>
 
 <div id="nav-backdrop" class="nav-backdrop" hidden></div>
