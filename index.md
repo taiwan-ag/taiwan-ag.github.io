@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Algebraic Geometry in Taiwan
+title: Activities
 permalink: /
 ---
 
