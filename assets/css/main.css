@@ -359,32 +359,10 @@ h2 {
   display: none;
 }
 
-/* People page heading: the page's h1 plus an inline toggle button for
-   the filter bar below (assets/js/people-filter.js), grouped and
-   centered together as one unit rather than each centered separately. */
-.people-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0.67em 0;
-}
-
-.people-heading h1 {
-  margin: 0;
-}
-
-/* Overrides .button's block/auto-margin centering, which fights the
-   flex layout here -- the search toggle should sit inline with the
-   heading, not centered on its own line. */
-.people-heading .button {
-  display: inline-block;
-  margin: 0;
-}
-
-/* Stays highlighted (not just on hover) while the filter bar it
-   controls is open, so its state is visible at a glance. */
-.people-heading .button.active {
+/* Stays highlighted (not just on hover) while a toggled panel it
+   controls is open (e.g. the People search/filter bar), so its state
+   is visible at a glance. */
+.button.active {
   border-color: var(--accent-color);
   color: var(--accent-color);
   opacity: 1;

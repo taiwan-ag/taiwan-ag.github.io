@@ -8,10 +8,9 @@ permalink: /people/
 {% assign positions = "Professor,Postdoc,PhD Student" | split: "," %}
 {% assign institutions = site.data.people.algebraic_geometers | map: "institution" | uniq | sort %}
 
-<div class="people-heading">
-  <h1>{{ page.heading }}</h1>
-  <button type="button" id="people-search-toggle" class="button" aria-expanded="false" aria-controls="people-filters">Search</button>
-</div>
+# {{ page.heading }}
+
+<button type="button" id="people-search-toggle" class="button" aria-expanded="false" aria-controls="people-filters">Search</button>
 
 <div class="people-filters" id="people-filters" hidden>
   <div class="filter-group">
