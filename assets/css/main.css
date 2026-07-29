@@ -216,7 +216,13 @@ h2 {
   padding: 0.2rem 0.7rem;
   border: 1px solid var(--text-color);
   border-radius: 999px;
+  /* Also applied to <button> elements (e.g. People's search/clear
+     toggles), which don't inherit font/cursor from the page by
+     default the way <a> tags do -- without this they'd render in the
+     browser's UI font with a non-pointer cursor. */
+  font: inherit;
   font-size: 0.9em;
+  cursor: pointer;
   background: none;
   color: var(--text-color);
   text-decoration: none;
