@@ -10,12 +10,7 @@ permalink: /people/
 
 <div class="people-heading">
   <h1>{{ page.heading }}</h1>
-  <button type="button" id="people-search-toggle" class="icon-button" aria-label="Toggle search and filters" aria-expanded="false" aria-controls="people-filters">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="11" cy="11" r="7"></circle>
-      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-    </svg>
-  </button>
+  <button type="button" id="people-search-toggle" class="button" aria-expanded="false" aria-controls="people-filters">Search</button>
 </div>
 
 <div class="people-filters" id="people-filters" hidden>

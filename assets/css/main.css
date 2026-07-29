@@ -374,22 +374,20 @@ h2 {
   margin: 0;
 }
 
-/* Generic small icon button, sized/colored like .info-toggle but
-   positioned inline rather than fixed. */
-.icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  color: #888;
-  cursor: pointer;
-  padding: 0.4rem;
+/* Overrides .button's block/auto-margin centering, which fights the
+   flex layout here -- the search toggle should sit inline with the
+   heading, not centered on its own line. */
+.people-heading .button {
+  display: inline-block;
+  margin: 0;
 }
 
-.icon-button:hover,
-.icon-button.active {
+/* Stays highlighted (not just on hover) while the filter bar it
+   controls is open, so its state is visible at a glance. */
+.people-heading .button.active {
+  border-color: var(--accent-color);
   color: var(--accent-color);
+  opacity: 1;
 }
 
 /* People page: filter bar above the card list (assets/js/people-filter.js
