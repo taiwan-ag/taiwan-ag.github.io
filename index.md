@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Activities
+title: Algebraic Geometry in Taiwan
 permalink: /
 ---
 
-# Activities
+# Algebraic Geometry in Taiwan
 
 [Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml){: .button }
 
