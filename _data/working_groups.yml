@@ -1,9 +1,0 @@
-# Active algebraic geometry working groups/seminars in Taiwan. Edit
-# directly via PR (no issue-form for this file, unlike events.yml).
-# Not associated with individual people.yml entries -- a person's
-# affiliation with a working group, if any, isn't tracked in the data.
-
-- name: "Example Algebraic Geometry Seminar"
-  institution: "National Taiwan University"
-  description: "Weekly seminar on current topics in algebraic geometry."
-  url: "https://example.org/ag-seminar"

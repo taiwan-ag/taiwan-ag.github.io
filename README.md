@@ -1,7 +1,7 @@
 # Taiwan Algebraic Geometry
 
 A website for the algebraic geometry community in Taiwan: who's active and
-what working groups exist, upcoming and past events, and job opportunities.
+what events (upcoming and past) are happening.
 
 Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 
@@ -17,9 +17,9 @@ edit files.
 
 ## Content data files
 
-Everything editable lives under `_data/*.yml`. All four content types
-(events, people, working groups, jobs) accept public suggestions via a
-GitHub issue template, reachable from buttons on the
+Everything editable lives under `_data/*.yml`. Both content types
+(events, people) accept public suggestions via a GitHub issue template,
+reachable from buttons on the
 [Get in Touch](https://taiwan-ag.github.io/get-in-touch/) page
 (`get-in-touch.md`); a maintainer then manually transcribes an accepted
 suggestion into the data file and closes the issue — there's no
@@ -122,67 +122,3 @@ the new `id`).
 just silently drops out of that person's chip list rather than breaking
 the build, but it's best kept in sync.
 
-## Working Groups
-
-### Suggesting a working group
-
-Visitors use the **Add Working Group** button on the Get in Touch page,
-which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-working-group.yml)
-(`.github/ISSUE_TEMPLATE/add-working-group.yml`) asking for the group's
-name, institution, description, and an optional homepage.
-
-### Adding a working group
-
-Whether you're transcribing a suggestion issue or adding one directly,
-edit `_data/working_groups.yml` and append an entry:
-
-```yaml
-- name: "Example Algebraic Geometry Seminar"
-  institution: "National Taiwan University"
-  description: "Weekly seminar on current topics in algebraic geometry."
-  url: "https://example.org/ag-seminar"   # optional
-```
-
-Shown on the `/working-groups/` page. Working groups aren't linked to
-`_data/people.yml` entries — a person's membership in one, if any, isn't
-tracked in the data.
-
-## Job Opportunities
-
-### Suggesting a job opportunity
-
-Visitors use the **Add Job Opportunity** button on the Get in Touch
-page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-job-opportunity.yml)
-(`.github/ISSUE_TEMPLATE/add-job-opportunity.yml`) asking for the
-position title, institution, an optional application deadline (left
-blank for a recurring/rolling opportunity), an optional posting URL, and
-an optional description.
-
-### Adding a job opportunity
-
-Whether you're transcribing a suggestion issue or adding one directly,
-edit `_data/jobs.yml`, which has two lists:
-
-```yaml
-open_positions:
-  - title: "Postdoctoral Fellow in Algebraic Geometry"
-    institution: "National Taiwan University"
-    deadline: 2026-12-01
-    url: "https://example.org/jobs/postdoc"   # optional
-    description: "Two-year position, algebraic geometry or related areas."
-
-recurring_opportunities:
-  - name: "NCTS Postdoctoral Fellowships"
-    institution: "National Center for Theoretical Sciences (NCTS), Taiwan"
-    url: "https://example.org/ncts-fellowships"   # optional
-    description: "Accepts applications on a rolling basis; check their site for current calls."
-```
-
-Add a suggestion with a `deadline` to `open_positions`, and one without
-a `deadline` (an ongoing/recurring opportunity) to
-`recurring_opportunities` — note the second list uses `name` rather than
-`title`. `deadline` is `YYYY-MM-DD`. `open_positions` entries
-automatically stop appearing on the Job Opportunities page once their
-`deadline` passes — you can delete the entry from the file at that point
-too, but it's not required. `recurring_opportunities` are always shown
-and have no `deadline` field.

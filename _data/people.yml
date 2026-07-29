@@ -4,9 +4,6 @@
 # entry here by hand and closes the issue -- there's no automation
 # behind this step, same as events.yml.
 #
-# Not associated with _data/working_groups.yml -- a person's
-# affiliation with a working group, if any, isn't tracked here.
-#
 # Fields on each algebraic_geometers entry:
 # - name:                display name.
 # - surname:              used only to alphabetize within each position

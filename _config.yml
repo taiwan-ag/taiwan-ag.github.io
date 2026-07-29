@@ -1,13 +1,12 @@
 title: "Taiwan Algebraic Geometry"
 short_title: "Taiwan AG"
-description: "Algebraic geometry in Taiwan: people, working groups, events, and job opportunities."
+description: "Algebraic geometry in Taiwan: people and events."
 baseurl: ""
 url: "https://taiwan-ag.github.io"
 
 # Used as site.time's timezone, so the upcoming/past split in
-# _includes/events-list.html and the open/closed split on
-# job-opportunities.md land on Taiwan's calendar day regardless of the
-# build server's TZ.
+# _includes/events-list.html lands on Taiwan's calendar day regardless
+# of the build server's TZ.
 timezone: Asia/Taipei
 
 # Explicitly disable the github-pages gem's default theme
