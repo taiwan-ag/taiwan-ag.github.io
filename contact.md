@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Contact
+heading: Contact
 permalink: /contact/
 ---
 
-# Contact
+# {{ page.heading }}
 
 ## Suggest an Addition to the Website
 

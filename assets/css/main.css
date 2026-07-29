@@ -137,8 +137,8 @@ h2 {
 
 /* Desktop-only: a persistent, non-clickable header atop the sidebar,
    above the nav links, so the name stays visible while browsing any
-   page. Hidden on mobile, where .topbar already shows the name (see
-   the @media block below). */
+   page. Hidden on mobile, where .topbar shows the current page's
+   heading instead (see the @media block below). */
 .sidebar-name {
   display: block;
   font-size: 1.15rem;
@@ -588,10 +588,24 @@ a.person-name:hover {
     height: 3rem;
     justify-content: center;
     left: 0;
+    /* Keeps the centered title clear of the nav-toggle/info-toggle
+       buttons, which float on top of this bar via fixed/absolute
+       positioning rather than taking up flex space of their own. */
+    padding: 0 3rem;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 20;
+  }
+
+  /* Truncates rather than wrapping/overlapping the corner buttons when
+     a page's heading is too long for narrow screens. */
+  .topbar-title {
+    font-weight: bold;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .nav-toggle {
@@ -609,7 +623,7 @@ a.person-name:hover {
     transform: translateY(-50%);
   }
 
-  /* .topbar already shows the name on mobile. */
+  /* .topbar already shows a title on mobile. */
   .sidebar-name,
   .sidebar-divider {
     display: none;

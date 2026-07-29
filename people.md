@@ -1,6 +1,7 @@
 ---
 layout: default
 title: People
+heading: Algebraic Geometers in Taiwan
 permalink: /people/
 ---
 
@@ -8,7 +9,7 @@ permalink: /people/
 {% assign institutions = site.data.people.algebraic_geometers | map: "institution" | uniq | sort %}
 
 <div class="people-heading">
-  <h1>Algebraic Geometers in Taiwan</h1>
+  <h1>{{ page.heading }}</h1>
   <button type="button" id="people-search-toggle" class="icon-button" aria-label="Toggle search and filters" aria-expanded="false" aria-controls="people-filters">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <circle cx="11" cy="11" r="7"></circle>
