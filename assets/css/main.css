@@ -555,11 +555,10 @@ a.person-name:hover {
     left: 0;
   }
 
-  /* h1's own default browser margin-top is redundant on top of
-     .page-content's padding above, and stacked with it the title sits
-     much too far below the topbar. */
+  /* .topbar already shows the page's title on mobile, so the in-page
+     h1 would just duplicate it. */
   h1 {
-    margin-top: 0;
+    display: none;
   }
 
   .topbar {
