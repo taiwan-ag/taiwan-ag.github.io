@@ -176,54 +176,22 @@ h3 {
 }
 
 .mailto-link,
-.paper-title,
-.paper-link,
-.pdf-link,
 .event-link,
-.teaching-course-link,
 .external-link {
   color: var(--accent-color);
   text-decoration: none;
 }
 
 .mailto-link:visited,
-.paper-title:visited,
-.paper-link:visited,
-.pdf-link:visited,
 .event-link:visited,
-.teaching-course-link:visited,
 .external-link:visited {
   color: var(--accent-color);
 }
 
 .mailto-link:hover,
-.paper-title:hover,
-.paper-link:hover,
-.pdf-link:hover,
 .event-link:hover,
-.teaching-course-link:hover,
 .external-link:hover {
   text-decoration: underline;
-}
-
-.paper-title {
-  font-style: italic;
-}
-
-.cv-page-link,
-.person-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.cv-page-link:visited,
-.person-link:visited {
-  color: inherit;
-}
-
-.cv-page-link:hover,
-.person-link:hover {
-  color: var(--accent-color);
 }
 
 /* Outline style: muted (text-color border/text at reduced opacity) by
@@ -275,12 +243,6 @@ h3 {
 
 .button-row .button {
   margin: 0;
-}
-
-.external-link-icon {
-  vertical-align: -1px;
-  margin-left: 0.15rem;
-  opacity: 0.6;
 }
 
 /* Hidden on desktop; only used to close the mobile drawer. */

@@ -1,8 +1,8 @@
 // Wires up the mobile hamburger button (#nav-toggle in header.html)
-// that shows/hides the left-side nav drawer (#site-nav) below the
-// desktop breakpoint. On desktop, #site-nav is a persistent sidebar
-// instead, and this button is hidden by main.css, so none of this
-// runs there in practice.
+// that shows/hides the off-canvas nav drawer (#site-nav) below the
+// desktop breakpoint. On desktop, #site-nav renders as plain inline
+// links instead, and this button is hidden by main.css, so none of
+// this runs there in practice.
 
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
