@@ -30,7 +30,7 @@ truth.
 
 ### Suggesting an event
 
-Visitors use the **Add Event** button on the homepage (Upcoming Events)
+Visitors use the **Add Event** button on the homepage (Activities)
 or the Get in Touch page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
 (defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
 title, organizing institution, start/end dates, and an optional homepage
@@ -50,11 +50,11 @@ edit `_data/events.yml` and append an entry:
 ```
 
 Dates are `YYYY-MM-DD`. You don't need to place the entry in any
-particular order in the file — `_includes/events-list.html` (used by
-both the homepage and `/past-events/`) automatically sorts events into
-Upcoming vs. Past and orders them by date, based on `end` (or `start`,
-if there's no `end`) versus the current date. If you're closing out a
-suggestion issue, do that once the entry is merged.
+particular order in the file — `_includes/events-list.html` (included
+twice on the homepage, once per section) automatically sorts events
+into Upcoming vs. Past and orders them by date, based on `end` (or
+`start`, if there's no `end`) versus the current date. If you're
+closing out a suggestion issue, do that once the entry is merged.
 
 ## People
 

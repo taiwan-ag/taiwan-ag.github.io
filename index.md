@@ -1,11 +1,17 @@
 ---
 layout: default
-title: Upcoming Events
+title: Activities
 permalink: /
 ---
 
-# Upcoming Events
+# Activities
 
 [Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml){: .button }
 
+## Upcoming Events
+
 {% include events-list.html events=site.data.events mode="upcoming" %}
+
+## Past Events
+
+{% include events-list.html events=site.data.events mode="past" %}
