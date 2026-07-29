@@ -35,37 +35,9 @@ html {
   --sidebar-bg-color: #e5e5e6;
   --text-color: #000;
   --accent-color: #0969da;
-  /* Shading for nav links, layered on top of --sidebar-bg-color: a dark
-     overlay in light mode, a light one in dark mode (see the two dark
-     blocks below), since "shading" darkens on a light background but
-     needs to lighten on an already-dark one. */
+  /* Shading for nav links, layered on top of --sidebar-bg-color. */
   --nav-active-bg: rgba(0, 0, 0, 0.06);
   --nav-hover-bg: rgba(0, 0, 0, 0.12);
-}
-
-/* Falls back to the system's light/dark preference when no manual
-   choice has been stored yet (see assets/js/theme-toggle.js). */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg-color: #1a1a1a;
-    --sidebar-bg-color: #262626;
-    --text-color: #e8e8e8;
-    --accent-color: #daa520;
-    --nav-active-bg: rgba(255, 255, 255, 0.08);
-    --nav-hover-bg: rgba(255, 255, 255, 0.16);
-  }
-}
-
-/* Manual override, set as a data-theme attribute on <html> once the
-   visitor has clicked the toggle button; wins over the system
-   preference above regardless of which way it goes. */
-:root[data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --sidebar-bg-color: #262626;
-  --text-color: #e8e8e8;
-  --accent-color: #daa520;
-  --nav-active-bg: rgba(255, 255, 255, 0.08);
-  --nav-hover-bg: rgba(255, 255, 255, 0.16);
 }
 
 body {
@@ -278,22 +250,71 @@ h2 {
   margin: 0;
 }
 
-.theme-toggle {
-  align-items: center;
-  background: none;
-  border: none;
-  color: #888;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 0.4rem;
+.info-toggle-wrap {
   position: fixed;
   top: 0.75rem;
   right: 0.75rem;
   z-index: 30;
 }
 
-.theme-toggle:hover {
+.info-toggle {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: center;
+  line-height: 1;
+  padding: 0.4rem;
+}
+
+.info-toggle:hover {
+  color: var(--accent-color);
+}
+
+/* Anchored to the right edge (not left, like ag-in-madrid's version of
+   this component) since .info-toggle-wrap sits in the top-right corner
+   here -- opening from the left would push the popup off-screen. */
+.info-popup {
+  background: var(--sidebar-bg-color);
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: normal;
+  right: 0;
+  margin-top: 0.5rem;
+  padding: 1rem 1.25rem;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  width: min(22rem, 85vw);
+  z-index: 10;
+}
+
+.info-popup p {
+  margin: 0 0 0.75rem;
+}
+
+.info-popup p:last-child {
+  margin-bottom: 0;
+}
+
+.info-popup p.info-popup-credit {
+  color: #888;
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 1rem;
+}
+
+.info-popup-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.info-popup-credit a:hover {
   color: var(--accent-color);
 }
 
@@ -353,7 +374,7 @@ h2 {
   margin: 0;
 }
 
-/* Generic small icon button, sized/colored like .theme-toggle but
+/* Generic small icon button, sized/colored like .info-toggle but
    positioned inline rather than fixed. */
 .icon-button {
   display: inline-flex;
@@ -583,7 +604,7 @@ a.person-name:hover {
   /* Centered the same way as .nav-toggle: top is the topbar's own
      vertical midpoint (half its 3rem height), then translateY(-50%)
      centers the button itself on that point. */
-  .theme-toggle {
+  .info-toggle-wrap {
     top: 1.5rem;
     transform: translateY(-50%);
   }

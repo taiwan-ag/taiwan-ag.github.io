@@ -7,7 +7,18 @@
     </button>
     <a href="{{ '/' | relative_url }}" class="site-name">{{ site.short_title }}</a>
   </div>
-  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+  <div class="info-toggle-wrap">
+    <button type="button" id="info-toggle" class="info-toggle" aria-expanded="false" aria-controls="info-popup" title="About this website" aria-label="About this website">&#9432;</button>
+    <div id="info-popup" class="info-popup" hidden>
+      <p>A directory of algebraic geometry events (conferences,
+      workshops, seminars) and researchers in Taiwan.</p>
+      <p>You can suggest additions through the Contact page.</p>
+      <p class="info-popup-credit">&mdash; Created by
+      <a href="https://pedro-nunez.github.io/">Pedro Núñez</a> &mdash;<br>
+      &mdash; Maintained by
+      <a href="https://math.ncku.edu.tw/p/404-1221-271791.php?Lang=zh-tw">Ching-Jui Lai</a> &mdash;</p>
+    </div>
+  </div>
 </header>
 
 <nav id="site-nav" class="site-nav" aria-label="Main navigation">
