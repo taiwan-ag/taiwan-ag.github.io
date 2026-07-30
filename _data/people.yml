@@ -38,6 +38,25 @@ algebraic_geometers:
     research_interests: ["complex-geometry"]
     url: "https://homepage.ntu.edu.tw/~hsuehyunglin/"
 
+  - name: "Ionut Ciocan-Fontanine"
+    surname: "Ciocan-Fontanine"
+    institution: "Academia Sinica"
+    position: "Professor"
+    research_interests: ["moduli-spaces", "enumerative-geometry"]
+    url: "https://www.math.sinica.edu.tw/members/a2b7f704-253d-40fc-ad6e-ed10a2ccd037"
+
+  - name: "Adeel A. Khan"
+    surname: "Khan"
+    institution: "Academia Sinica"
+    position: "Professor"
+    url: "https://www.preschema.com/"
+
+  - name: "Y.P. Lee"
+    surname: "Lee"
+    institution: "Academia Sinica"
+    position: "Professor"
+    url: "https://idv.sinica.edu.tw/ypleemath/"
+
   - name: "Hajime Nakahashi"
     surname: "Nakahashi"
     institution: "National Taiwan University"
@@ -69,7 +88,7 @@ algebraic_geometers:
     research_interests: ["arithmetic-geometry"]
     url: "https://sites.google.com/view/nathan-grieve"
 
-  - name: "Zack Garza"
+  - name: "D. Zack Garza"
     surname: "Garza"
     institution: "National Center for Theoretical Sciences"
     position: "Postdoc"
@@ -93,3 +112,45 @@ algebraic_geometers:
     institution: "National Cheng Kung University"
     position: "Postdoc"
     url: "https://sites.google.com/view/tai-hsuanchung/"
+
+  - name: "Emile Bouaziz"
+    surname: "Bouaziz"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+    url: "https://sites.google.com/view/emile-bouaziz-math/home"
+
+  - name: "Maxime Cazaux"
+    surname: "Cazaux"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+    research_interests: ["enumerative-geometry"]
+    url: "https://sites.google.com/as.edu.tw/maxime-cazaux-webpage/"
+
+  - name: "Irit Huq-Kuruvilla"
+    surname: "Huq-Kuruvilla"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+    research_interests: ["enumerative-geometry"]
+    url: "https://irit.hk/"
+
+  - name: "Andy Jia Zhi Jiang"
+    surname: "Jiang"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+
+  - name: "Yuki Koto"
+    surname: "Koto"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+
+  - name: "Borislav Mladenov"
+    surname: "Mladenov"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+
+  - name: "Özge Ülkem"
+    surname: "Ülkem"
+    institution: "Academia Sinica"
+    position: "Postdoc"
+    research_interests: ["arithmetic-geometry"]
+    url: "https://sites.google.com/view/ozgeulkem/"
