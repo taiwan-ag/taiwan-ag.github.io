@@ -3,9 +3,14 @@
 # _includes/events-list.html, based on end (or start, if no end) vs.
 # the current date. url is optional (omit if the event has no homepage).
 
-# EXAMPLE - replace with real entries
-- title: "Example Workshop on Birational Geometry"
-  institution: "National Taiwan University (NTU)"
-  start: 2026-10-05
-  end: 2026-10-09
-  url: "https://example.org/workshop"
+- title: "Mini-Workshop: Algebraic Geometry in Xitou"
+  institution: "Laboratory of Birational Geometry"
+  start: 2026-07-19
+  end: 2026-07-21
+  url: "https://sites.google.com/view/mini-workshopalgebraicgeometry/%E9%A6%96%E9%A0%81"
+
+- title: "Tour de Formosa"
+  institution: "National Taiwan University / National Science and Technology Council"
+  start: 2026-01-12
+  end: 2026-01-16
+  url: "https://sites.google.com/view/tour-de-formosa"
