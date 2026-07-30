@@ -17,11 +17,23 @@
 # - email:                optional.
 
 algebraic_geometers:
-  # EXAMPLE - replace with real entries
-  - name: "Jane Doe"
-    surname: "Doe"
+  - name: "Jungkai Alfred Chen"
+    surname: "Chen"
     institution: "National Taiwan University"
     position: "Professor"
-    research_interests: ["birational-geometry", "moduli-spaces"]
-    url: "https://example.org/~janedoe"
-    email: "jane.doe@example.org"
+    research_interests: ["birational-geometry"]
+    url: "https://www.math.ntu.edu.tw/~jkchen/"
+
+  - name: "Ching-Jui Lai"
+    surname: "Lai"
+    institution: "National Cheng Kung University"
+    position: "Professor"
+    research_interests: ["birational-geometry"]
+    url: "https://sites.google.com/site/cjlai72"
+
+  - name: "Hsueh-Yung Lin"
+    surname: "Lin"
+    institution: "National Taiwan University"
+    position: "Professor"
+    research_interests: ["complex-geometry"]
+    url: "https://homepage.ntu.edu.tw/~hsuehyunglin/"
