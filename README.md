@@ -33,8 +33,9 @@ truth.
 Visitors use the **Add Event** button on the homepage (Activities)
 or the Contact page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
 (defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
-title, organizing institution, start/end dates, and an optional homepage
-URL. Submitting it opens an issue labeled `add-event`.
+title, organizing institution, whether that institution organized the
+event without hosting it on its own campus, start/end dates, and an
+optional homepage URL. Submitting it opens an issue labeled `add-event`.
 
 ### Adding an event
 
@@ -44,6 +45,11 @@ edit `_data/events.yml` and append an entry:
 ```yaml
 - title: "NCTS Workshop on Birational Geometry"
   institution: "National Center for Theoretical Sciences (NCTS)"
+  organized_by: true   # omit unless the institution organized the event
+                        # without hosting it on its own campus (e.g. a
+                        # lab running a workshop at a resort) -- flips
+                        # the display from "at [institution]" to
+                        # "organized by [institution]"
   start: 2026-10-05
   end: 2026-10-09     # omit entirely for a single-day event
   url: "https://www.ncts.ntu.edu.tw/..."   # omit if there's no event homepage
