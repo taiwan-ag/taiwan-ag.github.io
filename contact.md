@@ -26,6 +26,10 @@ button below to get in touch:
 
 ## License
 
+This website was created by [Pedro Núñez](https://pedro-nunez.github.io)
+using Claude Code. The maintainer of the website is currently
+[Ching-Jui Lai](https://sites.google.com/site/cjlai72).
+
 The code behind this website is released into the public domain under the
 CC0 1.0 Universal dedication, so anyone is free to use, copy, modify, and
 redistribute it for any purpose, private or commercial, without asking
