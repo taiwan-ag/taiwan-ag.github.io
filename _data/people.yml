@@ -47,3 +47,49 @@ algebraic_geometers:
     surname: "Chang"
     institution: "National Taiwan University"
     position: "PhD Student"
+
+  - name: "Harry Richman"
+    surname: "Richman"
+    institution: "National Center for Theoretical Sciences"
+    position: "Postdoc"
+    research_interests: ["tropical-geometry", "moduli-spaces"]
+    url: "https://harryrichman.github.io/"
+
+  - name: "Flora Poon"
+    surname: "Poon"
+    institution: "National Center for Theoretical Sciences"
+    position: "Postdoc"
+    research_interests: ["moduli-spaces"]
+    url: "https://sites.google.com/view/florapoon/home/"
+
+  - name: "Nathan Grieve"
+    surname: "Grieve"
+    institution: "National Taiwan University"
+    position: "Postdoc"
+    research_interests: ["arithmetic-geometry"]
+    url: "https://sites.google.com/view/nathan-grieve"
+
+  - name: "Zack Garza"
+    surname: "Garza"
+    institution: "National Center for Theoretical Sciences"
+    position: "Postdoc"
+    research_interests: ["moduli-spaces"]
+    url: "https://dzackgarza.com/"
+
+  - name: "Tzu-Yang Chou"
+    surname: "Chou"
+    institution: "National Taiwan University"
+    position: "Postdoc"
+
+  - name: "Sasha Viktorova"
+    surname: "Viktorova"
+    institution: "National Center for Theoretical Sciences"
+    position: "Postdoc"
+    research_interests: ["complex-geometry", "moduli-spaces", "singularity-theory"]
+    url: "https://sites.google.com/view/viktorova/about"
+
+  - name: "Tai-Hsuan Chung"
+    surname: "Chung"
+    institution: "National Cheng Kung University"
+    position: "Postdoc"
+    url: "https://sites.google.com/view/tai-hsuanchung/"
