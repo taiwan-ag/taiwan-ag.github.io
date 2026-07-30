@@ -2,9 +2,13 @@
 # Events are sorted into Upcoming/Past automatically by
 # _includes/events-list.html, based on end (or start, if no end) vs.
 # the current date. url is optional (omit if the event has no homepage).
+# organized_by: true renders "organized by [institution]" instead of
+# "at [institution]" -- use for workshops run by a lab/institution at a
+# different physical venue.
 
 - title: "Mini-Workshop: Algebraic Geometry in Xitou"
   institution: "Laboratory of Birational Geometry"
+  organized_by: true
   start: 2026-07-19
   end: 2026-07-21
   url: "https://sites.google.com/view/mini-workshopalgebraicgeometry/%E9%A6%96%E9%A0%81"
@@ -28,7 +32,8 @@
   url: "https://sites.google.com/ncts.ntu.edu.tw/2026hdag-minicourses"
 
 - title: "Tour de Formosa"
-  institution: "National Taiwan University / National Science and Technology Council"
+  institution: "Laboratory of Birational Geometry"
+  organized_by: true
   start: 2026-01-12
   end: 2026-01-16
   url: "https://sites.google.com/view/tour-de-formosa"

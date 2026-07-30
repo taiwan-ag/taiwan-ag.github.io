@@ -19,6 +19,20 @@ body:
     validations:
       required: true
 
+  - type: checkboxes
+    id: organized-by
+    attributes:
+      label: Organizer, not venue
+      description: >-
+        Check this if the institution above organized the event but it was
+        physically held elsewhere (e.g. a lab running a workshop at a
+        resort or conference center) -- the site will then say "organized
+        by [institution]" instead of "at [institution]".
+      options:
+        - label: The institution above organized this event but didn't host it on its own campus.
+    validations:
+      required: false
+
   - type: input
     id: start-date
     attributes:

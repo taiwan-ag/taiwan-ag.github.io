@@ -3,10 +3,15 @@ Renders a <ul> of events bucketed by date, driven by site.data.events.
 Included twice on the Activities page (homepage), once per section.
 Parameters:
   events - required, a list of event hashes (title, institution, start,
-           end [optional], url [optional])
+           end [optional], url [optional], organized_by [optional])
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
            end (or start, if no end) is >= today, sorted soonest-first.
            "past" shows the rest, sorted most-recent-first.
+organized_by: true switches the trailing phrase from "at
+  {{ institution }}" to "organized by {{ institution }}" -- use it for
+  workshops run by a lab/institution at a different physical venue
+  (e.g. Xitou, Tour de Formosa), not for events simply hosted at a
+  university.
 {%- endcomment -%}
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
 {%- assign bucket = "" | split: "" -%}
@@ -33,7 +38,7 @@ Parameters:
   <li>
     {% include date-range.html start=event.start end=event.end %}:
     {% if event.url %}<a href="{{ event.url }}" class="event-link">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %},
-    at {{ event.institution }}.
+    {% if event.organized_by %}organized by{% else %}at{% endif %} {{ event.institution }}.
   </li>
 {% endfor %}
 </ul>
