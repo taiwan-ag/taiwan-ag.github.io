@@ -28,7 +28,7 @@ button below to get in touch:
 
 This website was created by [Pedro Núñez](https://pedro-nunez.github.io){: .external-link }
 using Claude Code. The maintainer of the website is currently
-[Ching-Jui Lai](https://sites.google.com/site/cjlai72){: .external-link }.
+[Ching-Jui Lai](https://math.ncku.edu.tw/p/404-1221-271791.php?Lang=en){: .external-link }.
 
 The code behind this website is released into the public domain under the
 CC0 1.0 Universal dedication, so anyone is free to use, copy, modify, and
