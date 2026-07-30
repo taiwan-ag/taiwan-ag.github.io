@@ -57,6 +57,27 @@ algebraic_geometers:
     position: "Professor"
     url: "https://idv.sinica.edu.tw/ypleemath/"
 
+  - name: "Jheng-Jie Chen"
+    surname: "Chen"
+    institution: "National Central University"
+    position: "Professor"
+    research_interests: ["birational-geometry"]
+    url: "https://scholars.ncu.edu.tw/en/persons/jheng-jie-chen/"
+
+  - name: "Kuan-Wen Lai"
+    surname: "Lai"
+    institution: "Tunghai University"
+    position: "Professor"
+    research_interests: ["birational-geometry", "moduli-spaces"]
+    url: "https://kwlai-math.github.io/"
+
+  - name: "Chih-Wei Chang"
+    surname: "Chang"
+    institution: "National University of Kaohsiung"
+    position: "Professor"
+    research_interests: ["tropical-geometry"]
+    url: "https://math.nuk.edu.tw/p/405-1018-95061,c95.php?Lang=en"
+
   - name: "Hajime Nakahashi"
     surname: "Nakahashi"
     institution: "National Taiwan University"
