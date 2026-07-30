@@ -9,7 +9,8 @@
 # - surname:              used only to alphabetize within each position
 #                          block on the People page (e.g. for "Wen-Fong
 #                          Ke" this would be "Ke"); not displayed.
-# - position:             one of "Professor", "Postdoc", "PhD Student".
+# - position:             one of "Professor", "Postdoc", "Visitor",
+#                          "PhD Student".
 # - institution:          affiliation shown on the People page.
 # - research_interests:   list of tag `id`s from research_areas.yml.
 #                          Add a new tag there first if none fit.

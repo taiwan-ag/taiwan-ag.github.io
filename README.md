@@ -82,7 +82,7 @@ Edit `_data/people.yml` and append an entry under `algebraic_geometers`:
 ```yaml
 - name: "Jane Doe"
   surname: "Doe"                 # see below -- not displayed
-  position: "Professor"          # "Professor", "Postdoc", or "PhD Student"
+  position: "Professor"          # "Professor", "Postdoc", "Visitor", or "PhD Student"
   institution: "National Taiwan University"
   research_interests: ["birational-geometry", "moduli-spaces"]
   url: "https://example.org/~janedoe"    # optional
@@ -90,8 +90,9 @@ Edit `_data/people.yml` and append an entry under `algebraic_geometers`:
 ```
 
 `surname` is used only to alphabetize people within their position block
-on the People page (Professors, then Postdocs, then PhD Students) — it's
-never shown. For "Wen-Fong Ke", `surname` would be `"Ke"`.
+on the People page (Professors, then Postdocs, then Visitors, then PhD
+Students) — it's never shown. For "Wen-Fong Ke", `surname` would be
+`"Ke"`.
 
 `research_interests` is a list of tag `id`s, not free text — see the next
 section.

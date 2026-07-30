@@ -5,7 +5,7 @@ heading: Algebraic Geometers in Taiwan
 permalink: /people/
 ---
 
-{% assign positions = "Professor,Postdoc,PhD Student" | split: "," %}
+{% assign positions = "Professor,Postdoc,Visitor,PhD Student" | split: "," %}
 {% assign institutions = site.data.people.algebraic_geometers | map: "institution" | uniq | sort %}
 
 # {{ page.heading }}

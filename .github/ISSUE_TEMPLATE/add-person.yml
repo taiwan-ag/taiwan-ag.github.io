@@ -27,6 +27,7 @@ body:
       options:
         - Professor
         - Postdoc
+        - Visitor
         - PhD Student
     validations:
       required: true
