@@ -374,11 +374,6 @@ a.person-name:hover {
   text-decoration: underline;
 }
 
-.person-sep {
-  margin: 0 0.3rem;
-  opacity: 0.6;
-}
-
 .person-email-icon {
   margin-left: 0.4rem;
   font-size: 0.85em;

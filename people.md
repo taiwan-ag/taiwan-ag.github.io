@@ -69,7 +69,6 @@ permalink: /people/
         <div class="person-card" data-position="{{ person.position | escape }}" data-institution="{{ person.institution | escape }}" data-interests="{{ interests | escape }}" data-name="{{ person.name | downcase | escape }}">
           <p class="person-line1">
             {% if person.url %}<a href="{{ person.url }}" class="external-link person-name">{{ person.name }}</a>{% else %}<span class="person-name">{{ person.name }}</span>{% endif %}
-            <span class="person-sep">—</span> {{ person.position }}
             {% if person.email %}<a href="mailto:{{ person.email }}" class="mailto-link person-email-icon" aria-label="Email {{ person.name }}">✉</a>{% endif %}
           </p>
           <p class="person-affiliation">{{ person.institution }}</p>
