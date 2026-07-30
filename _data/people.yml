@@ -106,9 +106,10 @@ algebraic_geometers:
   - name: "Nathan Grieve"
     surname: "Grieve"
     institution: "National Taiwan University"
-    position: "Postdoc"
-    research_interests: ["arithmetic-geometry"]
+    position: "Professor"
+    research_interests: ["birational-geometry", "arithmetic-geometry", "complex-geometry", "commutative-algebra", "toric-geometry"]
     url: "https://sites.google.com/view/nathan-grieve"
+    email: "nathan.m.grieve@gmail.com"
 
   - name: "D. Zack Garza"
     surname: "Garza"
