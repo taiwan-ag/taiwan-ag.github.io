@@ -37,3 +37,13 @@ algebraic_geometers:
     position: "Professor"
     research_interests: ["complex-geometry"]
     url: "https://homepage.ntu.edu.tw/~hsuehyunglin/"
+
+  - name: "Hajime Nakahashi"
+    surname: "Nakahashi"
+    institution: "National Taiwan University"
+    position: "PhD Student"
+
+  - name: "Hung-Pin Chang"
+    surname: "Chang"
+    institution: "National Taiwan University"
+    position: "PhD Student"
