@@ -23,3 +23,12 @@ If you have any other suggestions, requests, or comments, please use the
 button below to get in touch:
 
 [Get in Touch](mailto:taiwan-ag@ncts.ntu.edu.tw){: .button }
+
+## License
+
+The code behind this website is released into the public domain under the
+CC0 1.0 Universal dedication, so anyone is free to use, copy, modify, and
+redistribute it for any purpose, private or commercial, without asking
+permission:
+
+[View License](https://github.com/taiwan-ag/taiwan-ag.github.io/blob/main/LICENSE){: .button }
