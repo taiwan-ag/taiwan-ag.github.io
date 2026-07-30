@@ -22,4 +22,4 @@ the buttons below:
 If you have any other suggestions, requests, or comments, please use the
 button below to get in touch:
 
-[Get in Touch](mailto:contact@taiwan-ag.example){: .button }
+[Get in Touch](mailto:taiwan-ag@ncts.ntu.edu.tw){: .button }
