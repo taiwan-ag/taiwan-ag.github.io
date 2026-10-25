@@ -1,0 +1,71 @@
+name: Add a talk
+description: Suggest an individual algebraic geometry seminar or colloquium talk in Taiwan.
+title: "[Talk]: "
+labels: ["add-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an individual talk for the Taiwan Algebraic Geometry website.
+        A maintainer will review your suggestion and add accepted talks to the website.
+  - type: input
+    id: title
+    attributes:
+      label: Talk title
+      description: The title of the individual talk, rather than the name of the seminar.
+    validations:
+      required: true
+  - type: input
+    id: speaker
+    attributes:
+      label: Speaker
+      placeholder: "Jane Doe"
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Hosting institution
+      placeholder: "National Taiwan University"
+    validations:
+      required: true
+  - type: input
+    id: start
+    attributes:
+      label: Date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-11-05"
+    validations:
+      required: true
+  - type: input
+    id: seminar
+    attributes:
+      label: Seminar name
+      description: Optional name of the recurring seminar. Leave blank for a standalone talk.
+      placeholder: "NCTS Seminar in Algebraic Geometry"
+    validations:
+      required: false
+  - type: input
+    id: seminar-url
+    attributes:
+      label: Seminar website
+      description: Optional URL for the recurring seminar. Also provide its name above.
+      placeholder: "https://example.org/seminar"
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Optional city or more specific place. Displayed beside the hosting institution.
+      placeholder: "Taipei"
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: Talk homepage
+      description: Optional URL for this individual talk. Use the seminar website field for the recurring series.
+      placeholder: "https://example.org/talk"
+    validations:
+      required: false

@@ -1,0 +1,62 @@
+name: Add a meeting
+description: Suggest an algebraic geometry conference, workshop, minicourse, or school in Taiwan.
+title: "[Meeting]: "
+labels: ["add-event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a conference, workshop, minicourse, school, or similar program for the Taiwan Algebraic Geometry website.
+        A maintainer will review your suggestion and add accepted events to the website.
+  - type: input
+    id: title
+    attributes:
+      label: Meeting title
+    validations:
+      required: true
+  - type: input
+    id: institution
+    attributes:
+      label: Hosting or organizing institution
+      description: Name the institution hosting or organizing the meeting.
+    validations:
+      required: true
+  - type: checkboxes
+    id: organized-by
+    attributes:
+      label: Organized at a different venue
+      description: Leave unchecked if the event takes place on the institution's own campus.
+      options:
+        - label: This institution organizes the event at a different physical venue.
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Optional city or more specific place. Displayed as "in [location]" after the institution.
+      placeholder: "Taipei"
+    validations:
+      required: false
+  - type: input
+    id: start
+    attributes:
+      label: Start date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-11-05"
+    validations:
+      required: true
+  - type: input
+    id: end
+    attributes:
+      label: End date
+      description: Use YYYY-MM-DD. Leave blank for a single-day meeting.
+      placeholder: "2026-11-06"
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: Meeting homepage
+      description: Optional URL for further details about the meeting.
+      placeholder: "https://example.org/event"
+    validations:
+      required: false

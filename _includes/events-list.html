@@ -1,9 +1,12 @@
 {%- comment -%}
-Renders a list of event cards bucketed by date, driven by site.data.events.
+Renders combined meeting and talk cards bucketed by date.
 Included twice on the Activities page (homepage), once per section.
 Parameters:
-  events - required, a list of event hashes (title, category, institution,
-           start, end [optional], url [optional], organized_by [optional])
+  events - required, the combined site.data.meetings and site.data.talks
+           lists. Both require title, category, institution, and start;
+           location and url are optional. Meetings optionally have end
+           and organized_by. Talks require speaker and optionally have
+           seminar and seminar_url.
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
            end (or start, if no end) is >= today, sorted soonest-first.
            "past" shows the rest, sorted most-recent-first.
@@ -38,15 +41,36 @@ organized_by: true switches the institution line from "At
   <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}">
     <p class="event-line1">
       {% include date-range.html start=event.start end=event.end %}:
-      {% if event.url %}
-        <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
+      {% if event.category == "talk" %}
+        {% assign seminar = event.seminar | default: "Seminar talk" %}
+        {% if event.seminar != blank and event.seminar_url != blank %}
+          <a href="{{ event.seminar_url | escape }}" class="event-link event-title">{{ seminar | escape }}</a>
+        {% else %}
+          <span class="event-title">{{ seminar | escape }}</span>
+        {% endif %}
+        ({{ event.institution | escape }}{% if event.location != blank %}, {{ event.location | escape }}{% endif %})
       {% else %}
-        <span class="event-title">{{ event.title | escape }}</span>
+        {% if event.url != blank %}
+          <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
+        {% else %}
+          <span class="event-title">{{ event.title | escape }}</span>
+        {% endif %}
       {% endif %}
     </p>
-    <p class="event-institution">
-      {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}
-    </p>
+    {% if event.category == "talk" %}
+      <p class="event-details">
+        {{ event.speaker | escape }} &mdash;
+        {% if event.url != blank %}
+          <a href="{{ event.url | escape }}" class="event-link">{{ event.title | escape }}</a>
+        {% else %}
+          {{ event.title | escape }}
+        {% endif %}
+      </p>
+    {% else %}
+      <p class="event-institution">
+        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}{% if event.location != blank %} in {{ event.location | escape }}{% endif %}
+      </p>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>

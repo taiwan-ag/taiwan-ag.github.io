@@ -8,7 +8,7 @@ permalink: /
 # {{ page.heading }}
 
 <div class="events-actions">
-  <a href="https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml" class="button">Add Event</a>
+  <a href="{{ '/add-event/' | relative_url }}" class="button">Add Event</a>
   <button type="button" id="events-search-toggle" class="button" aria-expanded="false" aria-controls="events-filters">Search</button>
 </div>
 
@@ -55,12 +55,14 @@ permalink: /
 
 <p id="events-empty-message" class="events-empty-message" role="status" hidden><em>No events match the current filters.</em></p>
 
+{% assign events = site.data.meetings | concat: site.data.talks %}
+
 <section class="events-group" aria-labelledby="upcoming-events-heading">
   <h2 id="upcoming-events-heading">Upcoming Events</h2>
-  {% include events-list.html events=site.data.events mode="upcoming" %}
+  {% include events-list.html events=events mode="upcoming" %}
 </section>
 
 <section class="events-group" aria-labelledby="past-events-heading">
   <h2 id="past-events-heading">Past Events</h2>
-  {% include events-list.html events=site.data.events mode="past" %}
+  {% include events-list.html events=events mode="past" %}
 </section>
