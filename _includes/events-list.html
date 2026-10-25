@@ -38,6 +38,7 @@ organized_by: true switches the institution line from "At
 {%- endif -%}
 <ul class="event-cards" role="list">
 {% for event in bucket %}
+  {% assign location = event.location | default: "" | strip %}
   <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}">
     <p class="event-line1">
       {% include date-range.html start=event.start end=event.end %}:
@@ -48,7 +49,7 @@ organized_by: true switches the institution line from "At
         {% else %}
           <span class="event-title">{{ seminar | escape }}</span>
         {% endif %}
-        ({{ event.institution | escape }}{% if event.location != blank %}, {{ event.location | escape }}{% endif %})
+        ({{ event.institution | escape }}{% if location != "" %}, {{ location | escape }}{% endif %})
       {% else %}
         {% if event.url != blank %}
           <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
@@ -68,7 +69,7 @@ organized_by: true switches the institution line from "At
       </p>
     {% else %}
       <p class="event-institution">
-        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}{% if event.location != blank %} in {{ event.location | escape }}{% endif %}
+        {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}{% if location != "" %} in {{ location | escape }}{% endif %}
       </p>
     {% endif %}
   </li>
