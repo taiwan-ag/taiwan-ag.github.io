@@ -13,7 +13,7 @@ If you would like to suggest adding an event or researcher, please use
 the buttons below:
 
 <div class="button-row" markdown="1">
-[Add Event](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml){: .button }
+[Add Event]({{ '/add-event/' | relative_url }}){: .button }
 [Add Researcher](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml){: .button }
 </div>
 

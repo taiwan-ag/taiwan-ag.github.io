@@ -1,8 +1,9 @@
 # Individual algebraic geometry talks in Taiwan. Use category: talk.
 # Required fields: title (the talk's title), speaker, category,
 # institution (the host), start (YYYY-MM-DD).
-# Optional fields: location, url (the talk's homepage), seminar (the
-# recurring seminar's name), seminar_url (its website; also supply seminar).
+# Optional fields: location (physical city, region, or venue), url (the
+# talk's homepage), seminar (the recurring seminar's name), seminar_url
+# (its website; also supply seminar).
 # The first card line shows the date, seminar (or "Seminar talk"), and
 # (institution, location). The second shows speaker and the talk's title.
 # Add one entry per dated talk. Meetings belong in meetings.yml.

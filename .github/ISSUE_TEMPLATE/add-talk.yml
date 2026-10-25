@@ -57,7 +57,7 @@ body:
     id: location
     attributes:
       label: Location
-      description: Optional city or more specific place. Displayed beside the hosting institution.
+      description: Optional city, region, or venue where the talk takes place. Displayed beside the hosting institution.
       placeholder: "Taipei"
     validations:
       required: false

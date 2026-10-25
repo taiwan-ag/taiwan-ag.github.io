@@ -6,7 +6,8 @@
 # Meetings and talks are combined on the Events page, then sorted by
 # _includes/events-list.html, based on end (or start, if no end) vs.
 # the current date. Omit end for a single-day meeting.
-# location is free text, displayed as "in [location]" after the institution.
+# location is the physical city, region, or venue, displayed as
+# "in [location]" after the institution.
 # Omit url if the meeting has no homepage.
 # organized_by: true renders "organized by [institution]" instead of
 # "at [institution]" -- use for workshops run by a lab/institution at a
@@ -15,6 +16,7 @@
 - title: "Mini-Workshop: Algebraic Geometry in Xitou"
   category: meeting
   institution: "Laboratory of Birational Geometry"
+  location: "Xitou"
   organized_by: true
   start: 2026-07-19
   end: 2026-07-21
@@ -23,6 +25,7 @@
 - title: "NCTS Minicourse - Topics on Derived Categories of Coherent Sheaves"
   category: meeting
   institution: "National Center for Theoretical Sciences"
+  location: "Taipei"
   start: 2026-04-22
   end: 2026-04-29
   url: "https://ncts.ntu.edu.tw/events_3_detail.php?nid=395"
@@ -30,6 +33,7 @@
 - title: "2026 Higher Dimensional Algebraic Geometry"
   category: meeting
   institution: "National Taiwan University"
+  location: "Taipei"
   start: 2026-04-13
   end: 2026-04-17
   url: "https://sites.google.com/ncts.ntu.edu.tw/2026hdag"
@@ -37,6 +41,7 @@
 - title: "2026 Higher Dimensional Algebraic Geometry - Minicourses"
   category: meeting
   institution: "National Taiwan University"
+  location: "Taipei"
   start: 2026-04-04
   end: 2026-04-10
   url: "https://sites.google.com/ncts.ntu.edu.tw/2026hdag-minicourses"
@@ -44,6 +49,7 @@
 - title: "Tour de Formosa"
   category: meeting
   institution: "Laboratory of Birational Geometry"
+  location: "Taiwan's East Coast"
   organized_by: true
   start: 2026-01-12
   end: 2026-01-16

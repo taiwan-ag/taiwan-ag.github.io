@@ -34,6 +34,10 @@ truth.
 
 ## Events
 
+Event listings live in `_data/meetings.yml` and `_data/talks.yml`.
+The homepage (`index.md`) combines these files to build the Upcoming
+and Past event lists. Add each event to the appropriate file.
+
 ### Suggesting an event
 
 Visitors use the **Add Event** button on the homepage (Events)
@@ -65,7 +69,7 @@ programs to `_data/meetings.yml`. Required fields are `title`,
   category: meeting
   institution: "National Center for Theoretical Sciences (NCTS)"
   organized_by: true  # optional; only for meetings held away from its campus
-  location: "Taipei"  # optional city or more specific place
+  location: "Taipei"  # optional city, region, or venue
   start: 2026-10-05
   end: 2026-10-09     # omit for a single-day meeting
   url: "https://example.org/workshop"  # optional meeting homepage
@@ -77,6 +81,10 @@ followed by **in [location]** when a location is supplied. Use
 `organized_by: true` only when an institution organizes a meeting at a
 different physical venue, such as a lab running a workshop at a resort.
 Otherwise omit it.
+
+Use `location` for the physical city, region, or venue, separately from
+the hosting or organizing institution. Examples include `Taipei`,
+`Xitou`, and `Taiwan's East Coast`. The same field is available for talks.
 
 ### Adding a talk
 
@@ -92,7 +100,7 @@ first entry; keep `[]` when there are no talks. Required fields are
   category: talk
   institution: "National Taiwan University"
   start: 2026-11-05
-  location: "Taipei"  # optional city or more specific place
+  location: "Taipei"  # optional city, region, or venue
   seminar: "NCTS Seminar in Algebraic Geometry"  # optional recurring series
   seminar_url: "https://example.org/seminar"    # optional series website
   url: "https://example.org/talk"               # optional individual talk page

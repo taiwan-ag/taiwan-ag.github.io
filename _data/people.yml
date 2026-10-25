@@ -2,7 +2,7 @@
 # suggested via the "Add person" issue template
 # (.github/ISSUE_TEMPLATE/add-person.yml); a maintainer then adds the
 # entry here by hand and closes the issue -- there's no automation
-# behind this step, same as events.yml.
+# behind this step, same as meetings.yml and talks.yml.
 #
 # Fields on each algebraic_geometers entry:
 # - name:                display name.
