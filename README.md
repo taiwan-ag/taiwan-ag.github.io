@@ -36,7 +36,7 @@ truth.
 
 ### Suggesting an event
 
-Visitors use the **Add Event** button on the homepage (Activities)
+Visitors use the **Add Event** button on the homepage (Events)
 or the Contact page to open the [event choice page](https://taiwan-ag.github.io/add-event/)
 (`add-event.md`). They choose **Meeting** or **Talk**, then open the
 corresponding GitHub issue form:
@@ -116,14 +116,14 @@ unknown optional fields rather than guessing their values.
 ### Dates and categories
 
 Dates are `YYYY-MM-DD`. Entries can appear in any order in either file.
-Activities combines the two lists, and `_includes/events-list.html`
+Events combines the two lists, and `_includes/events-list.html`
 automatically groups and orders them: Upcoming events appear
 soonest-first, and Past events most-recent-first. The split compares
 `end` (or `start`, if there is no `end`) with the current date in Taiwan.
 
 Every entry must explicitly include `category: meeting` in the meetings
 file or `category: talk` in the talks file. The category controls card
-layout, the light blue background for meetings, and the Activities
+layout, the light blue background for meetings, and the Events
 page's event-type filter.
 
 Classify what the entry represents, independently of duration. A one-day
@@ -132,7 +132,7 @@ workshop is a `talk`.
 
 ### Searching events
 
-The **Search** button on Activities opens filters for the text displayed
+The **Search** button on Events opens filters for the text displayed
 in each card (including the title, speaker, seminar, institution, and
 location), event type, and a range for the event's starting date. Both
 date endpoints are inclusive, and either can be left blank. Selecting no event types shows

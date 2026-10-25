@@ -264,7 +264,7 @@ h3 {
   opacity: 1;
 }
 
-/* Filter panels on the People and Activities pages. Explicit [hidden]
+/* Filter panels on the People and Events pages. Explicit [hidden]
    overrides are needed because these panels set their own display. */
 .people-filters[hidden],
 .events-filters[hidden] {

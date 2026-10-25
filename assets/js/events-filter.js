@@ -1,4 +1,4 @@
-// Filters the Activities page's existing cards without changing their
+// Filters the Events page's existing cards without changing their
 // date order or Upcoming/Past grouping. ISO dates are compared directly
 // so date-range endpoints stay inclusive and independent of timezones.
 (function () {

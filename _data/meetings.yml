@@ -3,7 +3,7 @@
 # Required fields: title, category, institution, start (YYYY-MM-DD).
 # Optional fields: end, location, url, organized_by.
 # Individual seminar and colloquium talks belong in talks.yml.
-# Meetings and talks are combined on the Activities page, then sorted by
+# Meetings and talks are combined on the Events page, then sorted by
 # _includes/events-list.html, based on end (or start, if no end) vs.
 # the current date. Omit end for a single-day meeting.
 # location is free text, displayed as "in [location]" after the institution.
