@@ -7,4 +7,316 @@
 # The first card line shows the date, seminar (or "Seminar talk"), and
 # (institution, location). The second shows speaker and the talk's title.
 # Add one entry per dated talk. Meetings belong in meetings.yml.
-[]
+
+- title: "Derived Algebraic Geometry and Its Applications: Categorification of Donaldson--Thomas Theory"
+  speaker: "Chih-Huan Chang"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-07-29
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3169"
+
+- title: "The G-Hilbert Scheme and the Cautis-Logvinenko Conjecture"
+  speaker: "Ryo Yamagishi"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-08-10
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3170"
+
+- title: "On the ramified Iwasawa Main Conjecture for elliptic curves over function field of characteristic p>0"
+  speaker: "Fabien Trihan"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-08-12
+  location: "NTU, Taipei"
+  seminar: "NCTS Number Theory Seminar"
+  seminar_url: "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=365&nnid=2736"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3172"
+
+- title: "T-deformations of vertex algebras from wall-crossing and their Virasoro algebras"
+  speaker: "Arkadij Bojko"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-08-26
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16083"
+
+- title: "Enumerative invariants for orbifold Calabi-Yau threefolds"
+  speaker: "Emanuel Scheidegger"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-08-27
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16087"
+
+- title: "Quantum K-Theory and q-Difference Toda Hamiltonians"
+  speaker: "Takeshi Ikeda"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-09-09
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16110"
+
+- title: "Symplectic Irrationality via Gromov-Witten Invariants"
+  speaker: "Jiaji Cai"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-09-11
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3180"
+
+- title: "Overview and organizational meeting"
+  speaker: "Adeel Khan"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-09-16
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16127"
+
+- title: "Arithmetic Groups and Automorphism Groups of K3 Surfaces of Rank 4"
+  speaker: "Tomoki Oda"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-09-18
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3186"
+
+- title: "Motivic Hilbert Zeta Function of Non-Reduced Curves"
+  speaker: "Baidehi Chattopadhyay"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-09-24
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3191"
+
+- title: "Graphs in algebraic and arithmetic geometry"
+  speaker: "Farbod Shokrieh"
+  category: talk
+  institution: "National Yang Ming Chiao Tung University"
+  start: 2026-09-29
+  location: "NYCU, Hsinchu"
+  url: "https://www.math.nycu.edu.tw/event/e_lecture_content.php?N_ID=865"
+
+- title: "Fourier-Mukai transform of elliptic cohomology"
+  speaker: "Gufang Zhao"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-09-30
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16152"
+
+- title: "Cohomological Hall algebras and categories of line operators of 4d, N=2 gauge theories"
+  speaker: "Yaping Yang"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-01
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16153"
+
+- title: "Sheaves and local systems"
+  speaker: "Ching-En Lin"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-01
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16154"
+
+- title: "Painlevé VI: the search for canonical representations"
+  speaker: "Aaron Landesman"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-02
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3192"
+
+- title: "Branch Cycles and Galois Theory"
+  speaker: "Ophelia Adams"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-07
+  location: "NTU, Taipei"
+  seminar: "Taipei Postdoc Seminar"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6497?event_type=series"
+  url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3196"
+
+- title: "The six operations and constructible sheaves"
+  speaker: "Hung-Chun Yu"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-08
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16160"
+
+- title: "Normed algebras and bispans"
+  speaker: "Rune Haugseng"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-14
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16179"
+
+- title: "Nearby and vanishing cycles; universal local acyclicity"
+  speaker: "Andy Jiang"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-16
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+
+- title: "Topological Brauer Group of Enriques Manifolds"
+  speaker: "Francesca Rizzo"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-16
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17308"
+
+- title: "Singular support"
+  speaker: "Patricia (Yin-Chien) Tu"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-19
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+  url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16191"
+
+- title: "A Brief Introduction to Arc Spaces and Nash Problem"
+  speaker: "Keng-Hung Lin"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-21
+  location: "NTU, Taipei"
+  seminar: "Taipei Postdoc Seminar"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6497?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17351"
+
+- title: "Transformation Formulas of p-adic Hypergeometric Functions and Rational Points on Curves"
+  speaker: "Chung-Hsuan Wang"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-21
+  location: "NTU, Taipei"
+  seminar: "NCTS Number Theory Seminar"
+  seminar_url: "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=365"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17358"
+
+- title: "Special Values of L-functions of Drinfeld Modules"
+  speaker: "Oguz Gezmis"
+  category: talk
+  institution: "National Cheng Kung University"
+  start: 2026-10-22
+  location: "NCKU, Tainan"
+  seminar: "Colloquium"
+  seminar_url: "https://math.ncku.edu.tw/p/403-1221-3750-1.php?Lang=zh-tw"
+  url: "https://math.ncku.edu.tw/p/406-1221-306372,r3765.php?Lang=zh-tw"
+
+- title: "Moduli of Persson Surfaces"
+  speaker: "Xian Wu"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-23
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17357"
+
+- title: "Radon and Legendre transforms"
+  speaker: "Ping-Hsun Chuang"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-10-29
+  location: "NTU, Taipei"
+  seminar: "Étale Microlocalization Seminar"
+  seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
+
+- title: "Universal Torsors and Stably Rational Cubic Hypersurfaces"
+  speaker: "Zhijia Zhang"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-10-30
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17362"
+
+- title: "Title to be announced"
+  speaker: "Benedetta Piroddi"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-11-06
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+
+- title: "Syzygies of algebraic curves"
+  speaker: "Lawrence Ein"
+  category: talk
+  institution: "National Taiwan University"
+  start: 2026-11-23
+  location: "NTU, Taipei"
+  seminar: "NTU Mathematics Colloquium, 2026"
+  seminar_url: "https://www.math.ntu.edu.tw/en/speech_series/series/51"
+  url: "https://www.math.ntu.edu.tw/en/node/4591"
+
+- title: "Syzygies and singularities of the secant varieties of an algebraic curve"
+  speaker: "Lawrence Ein"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-11-27
+  location: "NTU, Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+
+- title: "Title to be announced"
+  speaker: "Andrés Ibáñez Núñez"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-12-16
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+
+- title: "Title to be announced"
+  speaker: "Hung-Chun Yu"
+  category: talk
+  institution: "Academia Sinica"
+  start: 2026-12-23
+  location: "NTU, Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+
