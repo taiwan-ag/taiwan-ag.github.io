@@ -70,19 +70,21 @@ permalink: /people/
       {% for person in group %}
         {% assign interests = person.research_interests | default: "" | join: " " %}
         <div class="person-card" data-position="{{ person.position | escape }}" data-institution="{{ person.institution | escape }}" data-interests="{{ interests | escape }}" data-name="{{ person.name | downcase | escape }}">
-          <p class="person-line1">
-            {% if person.url %}<a href="{{ person.url }}" class="external-link person-name">{{ person.name }}</a>{% else %}<span class="person-name">{{ person.name }}</span>{% endif %}
-            {% if person.email %}<a href="mailto:{{ person.email }}" class="mailto-link person-email-icon" aria-label="Email {{ person.name }}">✉</a>{% endif %}
-          </p>
+          <div class="person-header">
+            <p class="person-line1">
+              {% if person.url %}<a href="{{ person.url }}" class="external-link person-name">{{ person.name }}</a>{% else %}<span class="person-name">{{ person.name }}</span>{% endif %}
+              {% if person.email %}<a href="mailto:{{ person.email }}" class="mailto-link person-email-icon" aria-label="Email {{ person.name }}">✉</a>{% endif %}
+            </p>
+            {% if person.research_interests and person.research_interests.size > 0 %}
+            <p class="person-tags">
+              {% for tag_id in person.research_interests %}
+                {% assign tag = site.data.research_areas | where: "id", tag_id | first %}
+                {% if tag %}<button type="button" class="tag-chip" data-filter-type="tag" data-filter-value="{{ tag.id }}" title="{{ tag.label }}">{{ tag.abbr }}</button>{% endif %}
+              {% endfor %}
+            </p>
+            {% endif %}
+          </div>
           <p class="person-affiliation">{{ person.institution }}</p>
-          {% if person.research_interests and person.research_interests.size > 0 %}
-          <p class="person-tags">
-            {% for tag_id in person.research_interests %}
-              {% assign tag = site.data.research_areas | where: "id", tag_id | first %}
-              {% if tag %}<button type="button" class="tag-chip" data-filter-type="tag" data-filter-value="{{ tag.id }}" title="{{ tag.label }}">{{ tag.abbr }}</button>{% endif %}
-            {% endfor %}
-          </p>
-          {% endif %}
         </div>
       {% endfor %}
     </div>

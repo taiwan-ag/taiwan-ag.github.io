@@ -442,6 +442,14 @@ h3 {
   background: var(--meeting-bg-color);
 }
 
+.person-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+}
+
 .person-line1,
 .event-line1 {
   margin: 0;
@@ -475,8 +483,9 @@ a.person-name:hover {
 .person-tags {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.35rem;
-  margin: 0.5rem 0 0;
+  margin: 0 0 0 auto;
 }
 
 /* Tag chips appear both as filter-bar toggles and inline on each card
