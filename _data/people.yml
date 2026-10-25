@@ -9,8 +9,8 @@
 # - surname:              used only to alphabetize within each position
 #                          block on the People page (e.g. for "Wen-Fong
 #                          Ke" this would be "Ke"); not displayed.
-# - position:             one of "Professor", "Postdoc", "Visitor",
-#                          "PhD Student".
+# - position:             one of "Professor", "Research Scholar", "Postdoc",
+#                         "Visitor", "PhD Student".
 # - institution:          affiliation shown on the People page.
 # - research_interests:   list of tag `id`s from research_areas.yml.
 #                          Add a new tag there first if none fit.
@@ -36,7 +36,7 @@ algebraic_geometers:
     surname: "Lin"
     institution: "National Taiwan University"
     position: "Professor"
-    research_interests: ["complex-geometry"]
+    research_interests: ["complex-geometry", "birational-geometry"]
     url: "https://homepage.ntu.edu.tw/~hsuehyunglin/"
 
   - name: "Ionut Ciocan-Fontanine"
@@ -65,6 +65,18 @@ algebraic_geometers:
     research_interests: ["birational-geometry"]
     url: "https://scholars.ncu.edu.tw/en/persons/jheng-jie-chen/"
 
+  - name: "Shin-Yao Jow"
+    surname: "Jow"
+    institution: "National Tsing Hua University"
+    position: "Professor"
+    url: "http://www.math.nthu.edu.tw/front/Members/FullTime/member.php?ID=bnRodV9tYXRoJkZ1bGxUaW1l&PID=443"
+
+  - name: "Jiun-Cheng Chen"
+    surname: "Chen"
+    institution: "National Tsing Hua University"
+    position: "Professor"
+    url: "https://www.math.nthu.edu.tw/front/Members/FullTime/member.php?ID=bnRodV9tYXRoJkZ1bGxUaW1lπD=46"
+
   - name: "Kuan-Wen Lai"
     surname: "Lai"
     institution: "Tunghai University"
@@ -79,29 +91,12 @@ algebraic_geometers:
     research_interests: ["tropical-geometry"]
     url: "https://math.nuk.edu.tw/p/405-1018-95061,c95.php?Lang=en"
 
-  - name: "Hajime Nakahashi"
-    surname: "Nakahashi"
-    institution: "National Taiwan University"
-    position: "PhD Student"
-
-  - name: "Hung-Pin Chang"
-    surname: "Chang"
-    institution: "National Taiwan University"
-    position: "PhD Student"
-
   - name: "Harry Richman"
     surname: "Richman"
-    institution: "National Center for Theoretical Sciences"
-    position: "Postdoc"
+    institution: "National Yang Mich Chiao Tung University"
+    position: "Professor"
     research_interests: ["tropical-geometry", "moduli-spaces"]
     url: "https://harryrichman.github.io/"
-
-  - name: "Flora Poon"
-    surname: "Poon"
-    institution: "National Center for Theoretical Sciences"
-    position: "Postdoc"
-    research_interests: ["moduli-spaces"]
-    url: "https://sites.google.com/view/florapoon/home/"
 
   - name: "Nathan Grieve"
     surname: "Grieve"
@@ -110,6 +105,13 @@ algebraic_geometers:
     research_interests: ["birational-geometry", "arithmetic-geometry", "complex-geometry", "commutative-algebra", "toric-geometry"]
     url: "https://sites.google.com/view/nathan-grieve"
     email: "nathan.m.grieve@gmail.com"
+
+  - name: "Flora Poon"
+    surname: "Poon"
+    institution: "National Center for Theoretical Sciences"
+    position: "Postdoc"
+    research_interests: ["moduli-spaces"]
+    url: "https://sites.google.com/view/florapoon/home/"
 
   - name: "D. Zack Garza"
     surname: "Garza"
@@ -136,12 +138,6 @@ algebraic_geometers:
     position: "Postdoc"
     url: "https://sites.google.com/view/tai-hsuanchung/"
 
-  - name: "Emile Bouaziz"
-    surname: "Bouaziz"
-    institution: "Academia Sinica"
-    position: "Postdoc"
-    url: "https://sites.google.com/view/emile-bouaziz-math/home"
-
   - name: "Maxime Cazaux"
     surname: "Cazaux"
     institution: "Academia Sinica"
@@ -149,12 +145,17 @@ algebraic_geometers:
     research_interests: ["enumerative-geometry"]
     url: "https://sites.google.com/as.edu.tw/maxime-cazaux-webpage/"
 
-  - name: "Irit Huq-Kuruvilla"
-    surname: "Huq-Kuruvilla"
+  - name: "Ping-Hsun Chuang"
+    surname: "Chuang"
     institution: "Academia Sinica"
     position: "Postdoc"
-    research_interests: ["enumerative-geometry"]
-    url: "https://irit.hk/"
+    research_interests: ["arithmetic-geometry", "hodge-theory"]
+    url: "https://sites.google.com/view/pinghsunchuang"
+
+  - name: "Biy-Kuang Day"
+    surname: "Day"
+    institution: "Academia Sinica"
+    position: "Postdoc"
 
   - name: "Andy Jia Zhi Jiang"
     surname: "Jiang"
@@ -164,7 +165,13 @@ algebraic_geometers:
   - name: "Yuki Koto"
     surname: "Koto"
     institution: "Academia Sinica"
-    position: "Postdoc"
+    position: "Research Scholar"
+
+  - name: "Ryota Mikami"
+    surname: "Mikami"
+    institution: "Academia Sinica"
+    position: "Research Scholar"
+    research_interests: ["tropical-geometry"]
 
   - name: "Borislav Mladenov"
     surname: "Mladenov"
@@ -177,3 +184,13 @@ algebraic_geometers:
     position: "Postdoc"
     research_interests: ["arithmetic-geometry"]
     url: "https://sites.google.com/view/ozgeulkem/"
+
+  - name: "Hajime Nakahashi"
+    surname: "Nakahashi"
+    institution: "National Taiwan University"
+    position: "PhD Student"
+
+  - name: "Hung-Pin Chang"
+    surname: "Chang"
+    institution: "National Taiwan University"
+    position: "PhD Student"
