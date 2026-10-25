@@ -33,9 +33,11 @@ truth.
 Visitors use the **Add Event** button on the homepage (Activities)
 or the Contact page, which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-event.yml)
 (defined in `.github/ISSUE_TEMPLATE/add-event.yml`) asking for the event
-title, organizing institution, whether that institution organized the
-event without hosting it on its own campus, start/end dates, and an
-optional homepage URL. Submitting it opens an issue labeled `add-event`.
+title, category (`meeting` or `talk`), organizing institution, whether
+that institution organized the event without hosting it on its own
+campus, start/end dates, and an optional homepage URL. The category is
+a required single-choice dropdown. Submitting it opens an issue labeled
+`add-event`.
 
 ### Adding an event
 
@@ -44,6 +46,7 @@ edit `_data/events.yml` and append an entry:
 
 ```yaml
 - title: "NCTS Workshop on Birational Geometry"
+  category: meeting   # required: meeting or talk (see below)
   institution: "National Center for Theoretical Sciences (NCTS)"
   organized_by: true   # omit unless the institution organized the event
                         # without hosting it on its own campus (e.g. a
@@ -61,6 +64,26 @@ twice on the homepage, once per section) automatically sorts events
 into Upcoming vs. Past and orders them by date, based on `end` (or
 `start`, if there's no `end`) versus the current date. If you're
 closing out a suggestion issue, do that once the entry is merged.
+
+### Event categories
+
+Every event must explicitly include `category` with exactly one of these
+two values:
+
+- `meeting`: conferences, workshops, minicourses, summer schools, and
+  similar programs.
+- `talk`: individual seminar talks, colloquium talks, and other standalone
+  presentations.
+
+Classify what the entry represents, independently of duration. A one-day
+workshop is a `meeting`; an individual talk listed separately within a
+workshop is a `talk`.
+
+When transcribing a suggestion issue, copy the selected category into
+the event's `category` field. Keep the dropdown options in
+`.github/ISSUE_TEMPLATE/add-event.yml` in sync with these two values.
+The category is currently stored for future use; it does not yet affect
+how events are displayed or sorted.
 
 ## People
 

@@ -1,4 +1,7 @@
 # Algebraic geometry events in Taiwan (conferences, workshops, seminars).
+# category is required: meeting for conferences, workshops, minicourses,
+# schools, and similar programs; talk for individual seminar, colloquium,
+# and other standalone talks. Classify each entry independently of duration.
 # Events are sorted into Upcoming/Past automatically by
 # _includes/events-list.html, based on end (or start, if no end) vs.
 # the current date. url is optional (omit if the event has no homepage).
@@ -7,6 +10,7 @@
 # different physical venue.
 
 - title: "Mini-Workshop: Algebraic Geometry in Xitou"
+  category: meeting
   institution: "Laboratory of Birational Geometry"
   organized_by: true
   start: 2026-07-19
@@ -14,24 +18,28 @@
   url: "https://sites.google.com/view/mini-workshopalgebraicgeometry/%E9%A6%96%E9%A0%81"
 
 - title: "NCTS Minicourse - Topics on Derived Categories of Coherent Sheaves"
+  category: meeting
   institution: "National Center for Theoretical Sciences"
   start: 2026-04-22
   end: 2026-04-29
   url: "https://ncts.ntu.edu.tw/events_3_detail.php?nid=395"
 
 - title: "2026 Higher Dimensional Algebraic Geometry"
+  category: meeting
   institution: "National Taiwan University"
   start: 2026-04-13
   end: 2026-04-17
   url: "https://sites.google.com/ncts.ntu.edu.tw/2026hdag"
 
 - title: "2026 Higher Dimensional Algebraic Geometry - Minicourses"
+  category: meeting
   institution: "National Taiwan University"
   start: 2026-04-04
   end: 2026-04-10
   url: "https://sites.google.com/ncts.ntu.edu.tw/2026hdag-minicourses"
 
 - title: "Tour de Formosa"
+  category: meeting
   institution: "Laboratory of Birational Geometry"
   organized_by: true
   start: 2026-01-12
