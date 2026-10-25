@@ -32,7 +32,7 @@ body:
     id: location
     attributes:
       label: Location
-      description: Optional city, region, or venue where the meeting takes place. Displayed as "in [location]" after the institution.
+      description: Optional city or geographical region where the meeting takes place. Displayed as "in [location]" after the institution.
       placeholder: "Taipei"
     validations:
       required: false

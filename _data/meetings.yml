@@ -3,10 +3,12 @@
 # Required fields: title, category, institution, start (YYYY-MM-DD).
 # Optional fields: end, location, url, organized_by.
 # Individual seminar and colloquium talks belong in talks.yml.
-# Meetings and talks are combined on the Events page, then sorted by
-# _includes/events-list.html, based on end (or start, if no end) vs.
-# the current date. Omit end for a single-day meeting.
-# location is the physical city, region, or venue, displayed as
+# Meetings and talks are combined on the Events page, then grouped by
+# _includes/events-list.html using end (or start, if no end) vs.
+# the current date in Taiwan at build time. Within each group, start
+# determines the order: Upcoming soonest-first, Past most-recent-first.
+# Entries can appear in any order here. Omit end for a single-day meeting.
+# location is the city or geographical region, displayed as
 # "in [location]" after the institution.
 # Omit url if the meeting has no homepage.
 # organized_by: true renders "organized by [institution]" instead of

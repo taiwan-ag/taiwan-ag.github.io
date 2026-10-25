@@ -1,4 +1,5 @@
-// Filters the Events page's existing cards without changing their
+// Filters the Events page's existing cards, including full institution
+// names when abbreviations are displayed, without changing their
 // date order or Upcoming/Past grouping. ISO dates are compared directly
 // so date-range endpoints stay inclusive and independent of timezones.
 (function () {
@@ -25,7 +26,7 @@
       group.querySelectorAll(".event-card").forEach(function (card) {
         cards.push({
           element: card,
-          text: normalize(card.textContent),
+          text: normalize(card.textContent + " " + (card.dataset.institution || "")),
           category: card.dataset.category,
           start: card.dataset.start
         });

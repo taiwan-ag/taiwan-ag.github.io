@@ -49,14 +49,16 @@ corresponding GitHub issue form:
   and start date, with optional end date, location, homepage, and an
   organizer checkbox for meetings held away from the institution's campus.
 - `.github/ISSUE_TEMPLATE/add-talk.yml` asks for a talk title, speaker,
-  hosting institution, and date, with optional seminar name, seminar
-  website, location, and talk homepage.
+  hosting institution, and date, with optional institution abbreviation,
+  seminar name, seminar website, location, and talk homepage.
 
 Both forms create issues labeled `add-event`; their titles identify
 them as `[Meeting]` or `[Talk]`. A maintainer reviews the suggestion and
 copies accepted details into the appropriate data file below. Set
 `category` from the chosen form; visitors do not need to select it again.
 Close the suggestion issue once the entry is merged.
+For talks, copy the optional **Institution abbreviation** answer to
+`institution_abbreviated`, keeping the full hosting name in `institution`.
 
 ### Adding a meeting
 
@@ -69,7 +71,7 @@ programs to `_data/meetings.yml`. Required fields are `title`,
   category: meeting
   institution: "National Center for Theoretical Sciences (NCTS)"
   organized_by: true  # optional; only for meetings held away from its campus
-  location: "Taipei"  # optional city, region, or venue
+  location: "Taipei"  # optional city or geographical region
   start: 2026-10-05
   end: 2026-10-09     # omit for a single-day meeting
   url: "https://example.org/workshop"  # optional meeting homepage
@@ -82,7 +84,7 @@ followed by **in [location]** when a location is supplied. Use
 different physical venue, such as a lab running a workshop at a resort.
 Otherwise omit it.
 
-Use `location` for the physical city, region, or venue, separately from
+Use `location` for the city or geographical region, separately from
 the hosting or organizing institution. Examples include `Taipei`,
 `Xitou`, and `Taiwan's East Coast`. The same field is available for talks.
 
@@ -99,17 +101,29 @@ first entry; keep `[]` when there are no talks. Required fields are
   speaker: "Jane Doe"
   category: talk
   institution: "National Taiwan University"
+  institution_abbreviated: "NTU"  # optional short name for the talk card
   start: 2026-11-05
-  location: "Taipei"  # optional city, region, or venue
+  location: "Taipei"  # optional city or geographical region
   seminar: "NCTS Seminar in Algebraic Geometry"  # optional recurring series
   seminar_url: "https://example.org/seminar"    # optional series website
   url: "https://example.org/talk"               # optional individual talk page
 ```
 
-Talk cards show **date: seminar (institution, location)** on the first
-line and **speaker — talk title** on the second. Omit `seminar` for a
-standalone talk; the heading defaults to **Seminar talk**. Omit
-`location` to show just the institution in parentheses.
+Talk cards show **date: seminar (institution_abbreviated, location)** on
+the first line when an abbreviation is supplied, for example
+**5 Nov 2026: NCTS Seminar in Algebraic Geometry (NTU, Taipei)**.
+If `institution_abbreviated` is omitted, empty, or only whitespace, the
+card uses **(institution, location)** instead. Always supply the full
+hosting name in `institution`; `institution_abbreviated` is an optional
+display name, such as `AS` for Academia Sinica or `NCTS` for National
+Center for Theoretical Sciences.
+
+Use `location` for a city or geographical region, usually just the city:
+write `Taipei`, not `NTU, Taipei`. Omit `location` to show only the
+abbreviation or full institution name in parentheses, without a comma.
+
+The second line shows **speaker — talk title**. Omit `seminar` for a
+standalone talk; the heading defaults to **Seminar talk**.
 
 The seminar name links to `seminar_url`, and the talk title links to
 `url`, independently. Omit either URL when unavailable; supply a seminar
@@ -121,13 +135,25 @@ Add one entry per dated talk; omit meeting-only fields `end` and
 The examples above are illustrative, not actual event listings. Omit
 unknown optional fields rather than guessing their values.
 
-### Dates and categories
+### Dates, ordering, and categories
 
 Dates are `YYYY-MM-DD`. Entries can appear in any order in either file.
-Events combines the two lists, and `_includes/events-list.html`
-automatically groups and orders them: Upcoming events appear
-soonest-first, and Past events most-recent-first. The split compares
-`end` (or `start`, if there is no `end`) with the current date in Taiwan.
+The homepage combines meetings and talks, and `_includes/events-list.html`
+automatically groups and sorts them by their **start date**:
+
+- **Upcoming Events:** ascending order, with the earliest start date at
+  the top and later dates below, so visitors see the next events first.
+- **Past Events:** descending order, with the latest start date at the
+  top and older dates below, so visitors see the most recent events first.
+
+The different sort directions are intentional and apply to both meetings
+and talks within each section, regardless of their order in the data files.
+
+Grouping is separate from sorting: at each site build, an event belongs
+to Upcoming if its `end` (or `start`, if there is no `end`) is today or
+later in Taiwan (`Asia/Taipei`); otherwise it belongs to Past. This keeps
+an ongoing multi-day meeting in Upcoming through its final day, while its
+position within the section still depends on its start date.
 
 Every entry must explicitly include `category: meeting` in the meetings
 file or `category: talk` in the talks file. The category controls card
@@ -142,9 +168,11 @@ workshop is a `talk`.
 
 The **Search** button on Events opens filters for the text displayed
 in each card (including the title, speaker, seminar, institution, and
-location), event type, and a range for the event's starting date. Both
-date endpoints are inclusive, and either can be left blank. Selecting no event types shows
-both categories; selecting both does the same. Text, type, and date
+location), event type, and a range for the event's starting date.
+Institution searches match both the displayed abbreviation and the full
+institution name. Both date endpoints are inclusive, and either can be
+left blank. Selecting no event types shows both categories; selecting
+both does the same. Text, type, and date
 filters work together and preserve the existing event order. **Clear
 filters** restores the full list.
 

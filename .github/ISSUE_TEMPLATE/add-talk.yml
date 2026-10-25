@@ -26,9 +26,18 @@ body:
     id: institution
     attributes:
       label: Hosting institution
+      description: Full name of the institution hosting the talk.
       placeholder: "National Taiwan University"
     validations:
       required: true
+  - type: input
+    id: institution-abbreviated
+    attributes:
+      label: Institution abbreviation
+      description: Optional abbreviation displayed in the talk card, such as AS, NTU, or NCTS. Leave blank to display the full institution name.
+      placeholder: "NTU"
+    validations:
+      required: false
   - type: input
     id: start
     attributes:
@@ -57,7 +66,7 @@ body:
     id: location
     attributes:
       label: Location
-      description: Optional city, region, or venue where the talk takes place. Displayed beside the hosting institution.
+      description: Optional city or geographical region where the talk takes place. Displayed beside the institution abbreviation or full name. Put the institution in the fields above.
       placeholder: "Taipei"
     validations:
       required: false

@@ -1,19 +1,23 @@
 # Individual algebraic geometry talks in Taiwan. Use category: talk.
 # Required fields: title (the talk's title), speaker, category,
 # institution (the host), start (YYYY-MM-DD).
-# Optional fields: location (physical city, region, or venue), 
+# Optional fields: institution_abbreviated (e.g. AS, NTU, NCTS),
+# location (city or geographical region, without the institution),
 # seminar (the recurring seminar's name), seminar_url (its website),
-# url (link to the talk's info).
+# url (link to the talk's info). Always keep the full institution name.
 # The first card line shows the date, seminar (or "Seminar talk"), and
-# (institution, location). The second shows speaker and the talk's title.
+# (institution_abbreviated, location), falling back to institution when
+# the abbreviation is missing or blank. Omit location to show only the
+# institution. The second line shows speaker and the talk's title.
 # Add one entry per dated talk. Meetings belong in meetings.yml.
 
 - title: "Derived Algebraic Geometry and Its Applications: Categorification of Donaldson--Thomas Theory"
   speaker: "Chih-Huan Chang"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-07-29
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3169"
@@ -22,8 +26,9 @@
   speaker: "Ryo Yamagishi"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-08-10
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3170"
@@ -32,8 +37,9 @@
   speaker: "Fabien Trihan"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-08-12
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Number Theory Seminar"
   seminar_url: "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=365&nnid=2736"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3172"
@@ -42,8 +48,9 @@
   speaker: "Arkadij Bojko"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-08-26
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16083"
@@ -52,8 +59,9 @@
   speaker: "Emanuel Scheidegger"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-08-27
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16087"
@@ -62,8 +70,9 @@
   speaker: "Takeshi Ikeda"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-09-09
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16110"
@@ -72,8 +81,9 @@
   speaker: "Jiaji Cai"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-09-11
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3180"
@@ -82,8 +92,9 @@
   speaker: "Adeel Khan"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-09-16
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16127"
@@ -92,8 +103,9 @@
   speaker: "Tomoki Oda"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-09-18
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3186"
@@ -102,8 +114,9 @@
   speaker: "Baidehi Chattopadhyay"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-09-24
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3191"
@@ -112,16 +125,18 @@
   speaker: "Farbod Shokrieh"
   category: talk
   institution: "National Yang Ming Chiao Tung University"
+  institution_abbreviated: "NYCU"
   start: 2026-09-29
-  location: "NYCU, Hsinchu"
+  location: "Hsinchu"
   url: "https://www.math.nycu.edu.tw/event/e_lecture_content.php?N_ID=865"
 
 - title: "Fourier-Mukai transform of elliptic cohomology"
   speaker: "Gufang Zhao"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-09-30
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16152"
@@ -130,8 +145,9 @@
   speaker: "Yaping Yang"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-01
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16153"
@@ -140,8 +156,9 @@
   speaker: "Ching-En Lin"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-01
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16154"
@@ -150,8 +167,9 @@
   speaker: "Aaron Landesman"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-02
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3192"
@@ -160,8 +178,9 @@
   speaker: "Ophelia Adams"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-07
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Taipei Postdoc Seminar"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6497?event_type=series"
   url: "https://ncts.ntu.edu.tw/events_1_detail.php?nid=3196"
@@ -170,8 +189,9 @@
   speaker: "Hung-Chun Yu"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-08
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16160"
@@ -180,8 +200,9 @@
   speaker: "Rune Haugseng"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-14
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16179"
@@ -190,8 +211,9 @@
   speaker: "Andy Jiang"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-16
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
 
@@ -199,8 +221,9 @@
   speaker: "Francesca Rizzo"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-16
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17308"
@@ -209,8 +232,9 @@
   speaker: "Patricia (Yin-Chien) Tu"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-19
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
   url: "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/16191"
@@ -219,8 +243,9 @@
   speaker: "Keng-Hung Lin"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-21
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Taipei Postdoc Seminar"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6497?event_type=series"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17351"
@@ -229,8 +254,9 @@
   speaker: "Chung-Hsuan Wang"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-21
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Number Theory Seminar"
   seminar_url: "https://ncts.ntu.edu.tw/events_seminars_detail.php?gid=365"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17358"
@@ -239,8 +265,9 @@
   speaker: "Oguz Gezmis"
   category: talk
   institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
   start: 2026-10-22
-  location: "NCKU, Tainan"
+  location: "Tainan"
   seminar: "Colloquium"
   seminar_url: "https://math.ncku.edu.tw/p/403-1221-3750-1.php?Lang=zh-tw"
   url: "https://math.ncku.edu.tw/p/406-1221-306372,r3765.php?Lang=zh-tw"
@@ -249,8 +276,9 @@
   speaker: "Xian Wu"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-23
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17357"
@@ -259,8 +287,9 @@
   speaker: "Ping-Hsun Chuang"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-10-29
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Étale Microlocalization Seminar"
   seminar_url: "https://www.preschema.com/seminars/2026fw/etalemicrosem/"
 
@@ -268,8 +297,9 @@
   speaker: "Zhijia Zhang"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-10-30
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17362"
@@ -278,8 +308,9 @@
   speaker: "Benedetta Piroddi"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-11-06
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
 
@@ -287,8 +318,9 @@
   speaker: "Lawrence Ein"
   category: talk
   institution: "National Taiwan University"
+  institution_abbreviated: "NTU"
   start: 2026-11-23
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NTU Mathematics Colloquium, 2026"
   seminar_url: "https://www.math.ntu.edu.tw/en/speech_series/series/51"
   url: "https://www.math.ntu.edu.tw/en/node/4591"
@@ -297,8 +329,9 @@
   speaker: "Lawrence Ein"
   category: talk
   institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
   start: 2026-11-27
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
 
@@ -306,8 +339,9 @@
   speaker: "Andrés Ibáñez Núñez"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-12-16
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
 
@@ -315,8 +349,9 @@
   speaker: "Hung-Chun Yu"
   category: talk
   institution: "Academia Sinica"
+  institution_abbreviated: "AS"
   start: 2026-12-23
-  location: "NTU, Taipei"
+  location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
 

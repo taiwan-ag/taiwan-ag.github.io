@@ -6,7 +6,7 @@ Parameters:
            lists. Both require title, category, institution, and start;
            location and url are optional. Meetings optionally have end
            and organized_by. Talks require speaker and optionally have
-           seminar and seminar_url.
+           institution_abbreviated, seminar, and seminar_url.
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
            end (or start, if no end) is >= today, sorted soonest-first.
            "past" shows the rest, sorted most-recent-first.
@@ -39,17 +39,18 @@ organized_by: true switches the institution line from "At
 <ul class="event-cards" role="list">
 {% for event in bucket %}
   {% assign location = event.location | default: "" | strip %}
-  <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}">
+  <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}" data-institution="{{ event.institution | escape }}">
     <p class="event-line1">
       {% include date-range.html start=event.start end=event.end %}:
       {% if event.category == "talk" %}
+        {% assign institution = event.institution_abbreviated | default: "" | strip | default: event.institution %}
         {% assign seminar = event.seminar | default: "Seminar talk" %}
         {% if event.seminar != blank and event.seminar_url != blank %}
           <a href="{{ event.seminar_url | escape }}" class="event-link event-title">{{ seminar | escape }}</a>
         {% else %}
           <span class="event-title">{{ seminar | escape }}</span>
         {% endif %}
-        ({{ event.institution | escape }}{% if location != "" %}, {{ location | escape }}{% endif %})
+        ({{ institution | escape }}{% if location != "" %}, {{ location | escape }}{% endif %})
       {% else %}
         {% if event.url != blank %}
           <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
