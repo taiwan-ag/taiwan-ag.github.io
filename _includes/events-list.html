@@ -2,8 +2,8 @@
 Renders a list of event cards bucketed by date, driven by site.data.events.
 Included twice on the Activities page (homepage), once per section.
 Parameters:
-  events - required, a list of event hashes (title, institution, start,
-           end [optional], url [optional], organized_by [optional])
+  events - required, a list of event hashes (title, category, institution,
+           start, end [optional], url [optional], organized_by [optional])
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
            end (or start, if no end) is >= today, sorted soonest-first.
            "past" shows the rest, sorted most-recent-first.
@@ -35,7 +35,7 @@ organized_by: true switches the institution line from "At
 {%- endif -%}
 <ul class="event-cards" role="list">
 {% for event in bucket %}
-  <li class="event-card">
+  <li class="event-card" data-category="{{ event.category | escape }}" data-start="{{ event.start | date: '%Y-%m-%d' }}">
     <p class="event-line1">
       {% include date-range.html start=event.start end=event.end %}:
       {% if event.url %}

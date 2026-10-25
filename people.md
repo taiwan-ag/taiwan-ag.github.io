@@ -10,7 +10,10 @@ permalink: /people/
 
 # {{ page.heading }}
 
-<button type="button" id="people-search-toggle" class="button" aria-expanded="false" aria-controls="people-filters">Search</button>
+<div class="people-actions">
+  <a href="https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml" class="button">Add Researcher</a>
+  <button type="button" id="people-search-toggle" class="button" aria-expanded="false" aria-controls="people-filters">Search</button>
+</div>
 
 <div class="people-filters" id="people-filters" hidden>
   <div class="filter-group">

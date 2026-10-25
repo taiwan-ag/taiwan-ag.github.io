@@ -35,6 +35,7 @@ html {
   --sidebar-bg-color: #e5e5e6;
   --text-color: #000;
   --accent-color: #0969da;
+  --meeting-bg-color: #e6eef8;
   /* Shading for nav links, layered on top of --sidebar-bg-color. */
   --nav-active-bg: rgba(0, 0, 0, 0.06);
   --nav-hover-bg: rgba(0, 0, 0, 0.12);
@@ -234,14 +235,18 @@ h3 {
    link lines in a single shared <p> rather than one per link, so the
    flex layout targets that <p> -- the actual parent of the <a> tags --
    rather than .button-row itself. */
-.button-row p {
+.button-row p,
+.events-actions,
+.people-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
 }
 
-.button-row .button {
+.button-row .button,
+.events-actions .button,
+.people-actions .button {
   margin: 0;
 }
 
@@ -259,16 +264,15 @@ h3 {
   opacity: 1;
 }
 
-/* People page: filter bar above the card list (assets/js/people-filter.js
-   drives show/hide; markup lives in people.md). Explicit [hidden]
-   override needed since the plain .people-filters rule below sets its
-   own `display`, which an author stylesheet rule otherwise wins over
-   the browser's default `[hidden] { display: none }`. */
-.people-filters[hidden] {
+/* Filter panels on the People and Activities pages. Explicit [hidden]
+   overrides are needed because these panels set their own display. */
+.people-filters[hidden],
+.events-filters[hidden] {
   display: none;
 }
 
-.people-filters {
+.people-filters,
+.events-filters {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -308,7 +312,9 @@ h3 {
   margin: 0;
 }
 
-.people-search {
+.people-search,
+.events-search,
+.events-date-input {
   font: inherit;
   font-size: 0.9em;
   padding: 0.3rem 0.5rem;
@@ -319,7 +325,9 @@ h3 {
   opacity: 0.85;
 }
 
-.people-search:focus {
+.people-search:focus,
+.events-search:focus,
+.events-date-input:focus {
   outline: none;
   opacity: 1;
   border-color: var(--accent-color);
@@ -328,13 +336,74 @@ h3 {
 /* Overrides .button's block/auto-margin centering, which fights the
    flex layout here -- the clear button should sit inline with the
    other filter groups, not centered on its own line. */
-#people-filters-clear {
+#people-filters-clear,
+#events-filters-clear {
   display: inline-block;
   margin: 0;
 }
 
-.people-empty-message {
+.people-empty-message,
+.events-empty-message {
   opacity: 0.75;
+}
+
+.events-text-filter {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.events-search {
+  width: 100%;
+  min-width: 0;
+}
+
+.events-filters .filter-options {
+  flex-direction: column;
+}
+
+.events-date-range {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.events-date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.events-date-field label,
+.events-filter-hint,
+.events-date-error {
+  font-size: 0.85em;
+}
+
+.events-date-input {
+  max-width: 100%;
+}
+
+.events-filter-hint,
+.events-date-error {
+  margin: 0;
+}
+
+.events-filter-hint {
+  opacity: 0.75;
+}
+
+.events-date-error {
+  color: #a12424;
+}
+
+.events-actions,
+.people-actions {
+  margin-bottom: 1rem;
+}
+
+.events-group:first-of-type > h2 {
+  margin-top: 1rem;
 }
 
 .people-group {
@@ -363,6 +432,10 @@ h3 {
   padding: 0.75rem 1rem;
   border: 1px solid var(--nav-hover-bg);
   border-radius: 0.4rem;
+}
+
+.event-card[data-category="meeting"] {
+  background: var(--meeting-bg-color);
 }
 
 .person-line1,
@@ -493,7 +566,8 @@ a.person-name:hover {
     background: var(--nav-active-bg);
   }
 
-  .people-filters {
+  .people-filters,
+  .events-filters {
     flex-direction: column;
     align-items: stretch;
   }

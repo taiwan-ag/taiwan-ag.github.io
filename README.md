@@ -82,21 +82,29 @@ workshop is a `talk`.
 When transcribing a suggestion issue, copy the selected category into
 the event's `category` field. Keep the dropdown options in
 `.github/ISSUE_TEMPLATE/add-event.yml` in sync with these two values.
-The category is currently stored for future use; it does not yet affect
-how events are displayed or sorted.
+Meeting cards have a light blue background. The category also controls
+the Activities page's event-type filter.
+
+### Searching events
+
+The **Search** button on Activities opens filters for the text displayed
+in each card (including the event title and institution), event type,
+and a range for the event's starting date. Both date endpoints are
+inclusive, and either can be left blank. Selecting no event types shows
+both categories; selecting both does the same. Text, type, and date
+filters work together and preserve the existing event order. **Clear
+filters** restores the full list.
 
 ## People
 
 ### Suggesting a person
 
-Visitors use the **Add Researcher** button on the Contact page,
+Visitors use the **Add Researcher** button on the People or Contact page,
 which opens a pre-filled [issue form](https://github.com/taiwan-ag/taiwan-ag.github.io/issues/new?template=add-person.yml)
 (`.github/ISSUE_TEMPLATE/add-person.yml`) asking for name, surname,
 position, institution, an optional homepage/email, and research
 interests: checkboxes drawn from the current tag taxonomy, plus a
-free-text "Other" field for anything not yet covered. Unlike events,
-there's no such button on the People page itself, to keep it focused on
-browsing the community rather than prompting entries.
+free-text "Other" field for anything not yet covered.
 
 ### Adding a person
 
