@@ -7,5 +7,4 @@
 # The first card line shows the date, seminar (or "Seminar talk"), and
 # (institution, location). The second shows speaker and the talk's title.
 # Add one entry per dated talk. Meetings belong in meetings.yml.
-
-
+[]
