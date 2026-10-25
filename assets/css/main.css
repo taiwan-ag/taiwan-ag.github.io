@@ -345,23 +345,33 @@ h3 {
   margin-top: 0.75rem;
 }
 
-.people-cards {
+.people-cards,
+.event-cards {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.person-card {
+.event-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.person-card,
+.event-card {
   padding: 0.75rem 1rem;
   border: 1px solid var(--nav-hover-bg);
   border-radius: 0.4rem;
 }
 
-.person-line1 {
+.person-line1,
+.event-line1 {
   margin: 0;
 }
 
-.person-name {
+.person-name,
+.event-title {
   font-weight: bold;
   color: var(--accent-color);
 }
@@ -379,7 +389,8 @@ a.person-name:hover {
   font-size: 0.85em;
 }
 
-.person-affiliation {
+.person-affiliation,
+.event-institution {
   margin: 0.2rem 0 0;
 }
 

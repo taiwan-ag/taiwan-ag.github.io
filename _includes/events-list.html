@@ -1,5 +1,5 @@
 {%- comment -%}
-Renders a <ul> of events bucketed by date, driven by site.data.events.
+Renders a list of event cards bucketed by date, driven by site.data.events.
 Included twice on the Activities page (homepage), once per section.
 Parameters:
   events - required, a list of event hashes (title, institution, start,
@@ -7,8 +7,8 @@ Parameters:
   mode   - required, "upcoming" or "past". "upcoming" shows events whose
            end (or start, if no end) is >= today, sorted soonest-first.
            "past" shows the rest, sorted most-recent-first.
-organized_by: true switches the trailing phrase from "at
-  {{ institution }}" to "organized by {{ institution }}" -- use it for
+organized_by: true switches the institution line from "At
+  {{ institution }}" to "Organized by {{ institution }}" -- use it for
   workshops run by a lab/institution at a different physical venue
   (e.g. Xitou, Tour de Formosa), not for events simply hosted at a
   university.
@@ -33,12 +33,20 @@ organized_by: true switches the trailing phrase from "at
 {%- else -%}
   {%- assign bucket = bucket | sort: "start" | reverse -%}
 {%- endif -%}
-<ul>
+<ul class="event-cards" role="list">
 {% for event in bucket %}
-  <li>
-    {% include date-range.html start=event.start end=event.end %}:
-    {% if event.url %}<a href="{{ event.url }}" class="event-link">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %},
-    {% if event.organized_by %}organized by{% else %}at{% endif %} {{ event.institution }}.
+  <li class="event-card">
+    <p class="event-line1">
+      {% include date-range.html start=event.start end=event.end %}:
+      {% if event.url %}
+        <a href="{{ event.url | escape }}" class="event-link event-title">{{ event.title | escape }}</a>
+      {% else %}
+        <span class="event-title">{{ event.title | escape }}</span>
+      {% endif %}
+    </p>
+    <p class="event-institution">
+      {% if event.organized_by %}Organized by{% else %}At{% endif %} {{ event.institution | escape }}
+    </p>
   </li>
 {% endfor %}
 </ul>
