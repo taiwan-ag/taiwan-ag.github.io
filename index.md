@@ -13,9 +13,9 @@ permalink: /
 </div>
 
 <div class="events-filters" id="events-filters" hidden>
-  <div class="filter-group events-text-filter">
+  <div class="filter-group">
     <label for="events-search" class="filter-group-label">Search</label>
-    <input type="search" id="events-search" class="events-search" placeholder="Search by name, location, or institution…" autocomplete="off">
+    <input type="search" id="events-search" class="events-search" placeholder="Search events…" autocomplete="off">
   </div>
 
   <div class="filter-group" role="group" aria-labelledby="events-category-label">
@@ -23,11 +23,11 @@ permalink: /
     <div class="filter-options">
       <span class="filter-checkbox">
         <input type="checkbox" id="events-category-meeting" value="meeting" data-filter-type="category">
-        <label for="events-category-meeting">Meeting: Conferences, workshops, minicourses, …</label>
+        <label for="events-category-meeting">Meeting (conference, workshop, etc.)</label>
       </span>
       <span class="filter-checkbox">
         <input type="checkbox" id="events-category-talk" value="talk" data-filter-type="category">
-        <label for="events-category-talk">Talk: Seminar talks, colloquium talks, …</label>
+        <label for="events-category-talk">Talk (seminar talk, colloquium talk, etc.)</label>
       </span>
     </div>
   </div>

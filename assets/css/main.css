@@ -333,9 +333,8 @@ h3 {
   border-color: var(--accent-color);
 }
 
-/* Overrides .button's block/auto-margin centering, which fights the
-   flex layout here -- the clear button should sit inline with the
-   other filter groups, not centered on its own line. */
+/* Clear buttons use their surrounding layout for placement instead
+   of .button's default auto-margin centering. */
 #people-filters-clear,
 #events-filters-clear {
   display: inline-block;
@@ -347,14 +346,15 @@ h3 {
   opacity: 0.75;
 }
 
-.events-text-filter {
-  flex: 1 1 100%;
-  min-width: 0;
+.events-filters {
+  align-items: flex-start;
 }
 
-.events-search {
+.events-filters .filter-actions,
+.people-filters .filter-actions {
   width: 100%;
-  min-width: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .events-filters .filter-options {
