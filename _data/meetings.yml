@@ -56,6 +56,14 @@
   location: "Xitou"
   url: "https://sites.google.com/view/mini-workshopalgebraicgeometry/%E9%A6%96%E9%A0%81"
   organized_by: true
+
+- title: "Elliptic Curves in Mathematical Cryptography"
+  category: meeting
+  institution: "National Center for Theoretical Sciences"
+  start: 2026-09-24
+  end: 2026-10-15
+  location: "Taipei"
+  url: "https://ncts.ntu.edu.tw/news/Events/courses/6193"
   
 - title: "Complex and Algebraic Geometry Seminar in Southern Taiwan"
   category: meeting
@@ -64,11 +72,12 @@
   end: 2026-11-17
   location: "Tainan"
   url: "https://southern-taiwan-geometry-2026.icy-lotus-8398.chatgpt.site/"
-  
-- title: "Elliptic Curves in Mathematical Cryptography"
+
+- title: "12th POSTECH PMI NCTS Joint Workshop on Number Theory"
   category: meeting
   institution: "National Center for Theoretical Sciences"
-  start: 2026-09-24
-  end: 2026-10-15
+  start: 2026-12-28
+  end: 2026-12-31
   location: "Taipei"
-  url: "https://ncts.ntu.edu.tw/news/Events/courses/6193"
+  url: "https://ncts.ntu.edu.tw/news/Events/conferences/5926"
+
