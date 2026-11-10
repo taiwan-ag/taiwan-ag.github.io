@@ -73,6 +73,14 @@
   location: "Tainan"
   url: "https://southern-taiwan-geometry-2026.icy-lotus-8398.chatgpt.site/"
 
+- title: "2026 Southern Algebraic Geometry Workshop"
+  category: meeting
+  institution: "National Sun Yat-sen University"
+  start: 2026-12-19
+  end: 2026-12-21
+  location: "Kaohsiung"
+  url: "https://ncts.ntu.edu.tw/news/Events/conferences/6608"
+
 - title: "12th POSTECH PMI NCTS Joint Workshop on Number Theory"
   category: meeting
   institution: "National Center for Theoretical Sciences"
