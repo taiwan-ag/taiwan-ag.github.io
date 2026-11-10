@@ -314,6 +314,58 @@
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
 
+- title: "Tropical Dynamics"
+  speaker: "Rohini Ramadas"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-11-13
+  location: "Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17385"
+
+- title: "Toward the Classification of Normal Stable Surfaces"
+  speaker: "Makoto Enokizono"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-11-13
+  location: "Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17382"
+
+- title: "Combinatorial polyhedral geometry of matroids"
+  speaker: "Spencer Backman"
+  category: talk
+  institution: "National Yang Ming Chiao Tung University"
+  institution_abbreviated: "NYCU"
+  start: 2026-11-17
+  location: "Hsinchu"
+  url: "https://www.math.nycu.edu.tw/event/lecture_content.php?N_ID=871"
+
+- title: "Algebraically Skew Varieties"
+  speaker: "Andy Day"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-11-18
+  location: "Taipei"
+  seminar: "Taipei Postdoc Seminar"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6497?event_type=series"
+  url: "https://ncts.ntu.edu.tw/news/Events/seminars/17381"
+
+- title: "Resolutions of linear p-cyclic quotient singularities"
+  speaker: "Linghu Fan"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-11-20
+  location: "Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+
 - title: "Syzygies of algebraic curves"
   speaker: "Lawrence Ein"
   category: talk
@@ -334,6 +386,16 @@
   location: "Taipei"
   seminar: "NCTS Seminar in Algebraic Geometry"
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+
+- title: "Another n! theorem"
+  speaker: "Vladimir Dotsenko"
+  category: talk
+  institution: "Institute of Mathematics, Academia Sinica"
+  institution_abbreviated: "AS"
+  start: 2026-12-02
+  location: "Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
 
 - title: "Title to be announced"
   speaker: "Andrés Ibáñez Núñez"
