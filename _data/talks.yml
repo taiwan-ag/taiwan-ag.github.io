@@ -336,6 +336,46 @@
   seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
   url: "https://ncts.ntu.edu.tw/news/Events/seminars/17382"
 
+- title: "Aspects of fake projective planes"
+  speaker: "Sai-Kee Yeung"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-15
+  location: "Tainan"
+
+- title: "On the geometry of Schoen threefolds and their many minimal models"
+  speaker: "Cécile Gachet"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-15
+  location: "Tainan"
+
+- title: "A valuative approach to -K-MMP"
+  speaker: "Sung Rak Choi"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-16
+  location: "Tainan"
+
+- title: "RC-positivity of complex surfaces"
+  speaker: "Kuang-Ru Wu"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-16
+  location: "Tainan"
+
+- title: "Rigidity and classification of holomorphic mappings among moduli space of curves and locally Hermitian symmetric spaces"
+  speaker: "Sai-Kee Yeung"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-16
+  location: "Tainan"
+
 - title: "Combinatorial polyhedral geometry of matroids"
   speaker: "Spencer Backman"
   category: talk
@@ -344,6 +384,30 @@
   start: 2026-11-17
   location: "Hsinchu"
   url: "https://www.math.nycu.edu.tw/event/lecture_content.php?N_ID=871"
+
+- title: "On the geometry of Schoen threefolds and their many minimal models"
+  speaker: "Cécile Gachet"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-17
+  location: "Tainan"
+
+- title: "Ascending chain condition for minimal log discrepancies for bounded threefolds"
+  speaker: "Wei-Chung Chen"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-17
+  location: "Tainan"
+
+- title: "Admissible rays and -K-MMP"
+  speaker: "Sung Rak Choi"
+  category: talk
+  institution: "National Cheng Kung University"
+  institution_abbreviated: "NCKU"
+  start: 2026-11-17
+  location: "Tainan"
 
 - title: "Algebraically Skew Varieties"
   speaker: "Andy Day"
@@ -377,6 +441,16 @@
   seminar_url: "https://www.math.ntu.edu.tw/en/speech_series/series/51"
   url: "https://www.math.ntu.edu.tw/en/node/4591"
 
+- title: "To be announced"
+  speaker: "Linus Hamann"
+  category: talk
+  institution: "Institute of Mathematics, Academia Sinica"
+  institution_abbreviated: "AS"
+  start: 2026-11-25
+  location: "Taipei"
+  seminar: "Algebraic Geometry Seminar"
+  seminar_url: "https://www.preschema.com/seminars/ag/"
+
 - title: "Syzygies and singularities of the secant varieties of an algebraic curve"
   speaker: "Lawrence Ein"
   category: talk
@@ -396,6 +470,26 @@
   location: "Taipei"
   seminar: "Algebraic Geometry Seminar"
   seminar_url: "https://www.preschema.com/seminars/ag/"
+
+- title: "To be announced"
+  speaker: "Francesco Denisi"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-12-04
+  location: "Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
+
+- title: "To be announced"
+  speaker: "Chai-Yu Chang"
+  category: talk
+  institution: "National Center for Theoretical Sciences"
+  institution_abbreviated: "NCTS"
+  start: 2026-12-11
+  location: "Taipei"
+  seminar: "NCTS Seminar in Algebraic Geometry"
+  seminar_url: "https://ncts.ntu.edu.tw/news/Events/seminars/6501?event_type=series"
 
 - title: "Title to be announced"
   speaker: "Andrés Ibáñez Núñez"
