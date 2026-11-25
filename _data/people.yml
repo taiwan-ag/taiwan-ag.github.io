@@ -194,3 +194,11 @@ algebraic_geometers:
     surname: "Chang"
     institution: "National Taiwan University"
     position: "PhD Student"
+
+  - name: "Chih-Huan Chang"
+    surname: "Chang"
+    institution: "University of Pennsylvania"
+    position: "PhD Student"
+    research_interests: ["moduli-spaces", "enumerative-geometry"]
+    url: "https://chih-huan-chang.github.io/"
+    email: "chihhuan@sas.upenn.edu"
